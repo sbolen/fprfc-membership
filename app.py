@@ -22,7 +22,10 @@ LOGO_PATH = Path(__file__).parent / "assets" / "logo.png"
 
 # Reference point for the distance metric. Members' locations are approximated by
 # postcode centroid (US) or city (international) since street addresses were removed.
-REFERENCE_LABEL = "the Gateway Arch, St. Louis, MO"
+# The headline names the landmark; the note gives the street address it sits on.
+REFERENCE_HEADLINE = "Average Distance from Gateway Arch"
+REFERENCE_ADDRESS = "100 Washington Avenue, St. Louis, MO"
+REFERENCE_NOTE = f"straight-line distance from {REFERENCE_ADDRESS}"
 REFERENCE_LATLON = (38.6245067, -90.1856833)
 EARTH_RADIUS_MI = 3958.7613
 
@@ -373,8 +376,8 @@ def mi(v: float | None) -> str:
     return f"{v:,.0f} mi" if v is not None else "—"
 
 
-dist_note = (f"straight-line from {REFERENCE_LABEL}" if dist_units == n_total
-             else f"from {REFERENCE_LABEL} · {dist_units} of {n_total} located")
+dist_note = (f"{REFERENCE_NOTE}" if dist_units == n_total
+             else f"{REFERENCE_NOTE} · {dist_units} of {n_total} located")
 
 st.markdown(
     f"""
@@ -413,7 +416,7 @@ st.markdown(
       </div>
       <div class="card card-wide accent-distance">
         <div class="wide-main">
-          <div class="label">Average Distance from Gateway Arch</div>
+          <div class="label">{REFERENCE_HEADLINE}</div>
           <div class="value">{mi(dist_mean)}</div>
           <div class="note">{dist_note}</div>
         </div>
@@ -633,7 +636,7 @@ Source: `data/2026-memberships.csv` · {len(df_all):,} order records · {int(df_
   an email column the dashboard can no longer tell repeat buyers apart.
 - Average new members per day is the filtered membership count divided by the number of
   days from the first to the last order in the current selection.
-- Average distance is straight-line (great-circle) from {REFERENCE_LABEL}. Because street
+- Average distance is straight-line (great-circle) from {REFERENCE_ADDRESS}. Because street
   addresses were removed, each member's location is approximated by their postcode
   centroid (US, from GeoNames) or city centroid (international, from OpenStreetMap) — so
   treat it as indicative, not exact. Averages are weighted by quantity, so a

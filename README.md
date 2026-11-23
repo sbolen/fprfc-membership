@@ -57,8 +57,9 @@ from the first to the last order in the selection (355 days for the full dataset
 
 ## Average distance
 
-Straight-line (great-circle) distance from the **Gateway Arch**, St. Louis (38.6245, −90.1857).
-Street addresses were removed from the export, so each member's location is approximated by:
+Straight-line (great-circle) distance from **100 Washington Avenue, St. Louis, MO**
+(38.6245, −90.1857 — the Gateway Arch, which the card headline names). Street addresses
+were removed from the export, so each member's location is approximated by:
 
 - **US** — postcode centroid, ZIP+4 trimmed to 5 digits, from GeoNames via `pgeocode`
 - **International** — city centroid, from OpenStreetMap Nominatim
