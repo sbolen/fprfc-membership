@@ -27,6 +27,9 @@ the same hue (`#8cc9b4`). Neutral membership charts use `#02463a` with `#7ba394`
   New-per-week view, broken out by tier. Revenue uses the tier prices below.
 - **Geography** — members by US state (bar or choropleth map), a Members / Revenue toggle
   for the state breakdown, and members by country.
+- **Distance from St. Louis landmarks** — a pydeck map of Missouri and Illinois members
+  with two landmarks pinned, plus cumulative counts of memberships within 5–50 miles of
+  each (Bishop DuBourg High School and Rockwell Beer).
 
 Sidebar filters: date range, membership tier, and whether to include canceled orders
 (excluded by default). Filtered data can be downloaded from the bottom of the page.

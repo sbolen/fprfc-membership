@@ -14,6 +14,7 @@ from zoneinfo import ZoneInfo
 
 import pandas as pd
 import plotly.graph_objects as go
+import pydeck as pdk
 import streamlit as st
 
 DATA_PATH = Path(__file__).parent / "data" / "2026-memberships.csv"
@@ -28,6 +29,15 @@ REFERENCE_ADDRESS = "100 Washington Avenue, St. Louis, MO"
 REFERENCE_NOTE = f"straight-line distance from {REFERENCE_ADDRESS}"
 REFERENCE_LATLON = (38.6245067, -90.1856833)
 EARTH_RADIUS_MI = 3958.7613
+
+# Landmarks for the distance-band analysis, measured over the MO + IL membership base.
+LANDMARKS = [
+    ("Bishop DuBourg", "5850 Eichelberger St, St. Louis, MO 63109", (38.5808670, -90.2957539)),
+    ("Rockwell Beer", "1320 S Vandeventer Ave, St. Louis, MO 63110", (38.6256886, -90.2514078)),
+]
+DISTANCE_BANDS = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+MAP_ZOOM = 8
+MAP_CENTER = (38.627, -90.199)   # downtown St. Louis, so the bands stay framed
 
 # Timestamps display in the club's local time, whatever timezone the host runs in.
 # Streamlit Community Cloud runs in UTC, so without this the stamp would read in UTC.
@@ -48,6 +58,15 @@ FOUNDERS_COLOR = "#db582e"  # Founders Ring
 CONTROL_COLOR = "#02463a"  # toggles, buttons, map gradient, aggregate metrics
 
 TIER_COLORS = {ROOTS: ROOTS_COLOR, FOUNDERS: FOUNDERS_COLOR}
+
+# st.map takes literal colours rather than categories, and centres on the data's
+# bounding box — which the Chicago/Kansas City members pull well north-west of
+# St. Louis. The map is therefore built with pydeck (the engine st.map wraps) so the
+# view can be pinned and the marker sizes controlled.
+MAP_MEMBER_COLOR = CONTROL_COLOR
+MAP_LANDMARK_COLORS = [ROOTS_COLOR, FOUNDERS_COLOR]
+MAP_MEMBER_RGB = [2, 70, 58, 190]
+MAP_LANDMARK_RGB = [[155, 34, 70, 235], [219, 88, 46, 235]]
 
 # Revenue charts stay in the revenue green; the tier split uses a lighter tint of
 # the same hue. Neutral charts use the control green with a tint for the "other" group.
@@ -240,6 +259,24 @@ st.markdown(
                     text-transform: uppercase; color: {MUTED}; white-space: nowrap; }}
         .mini .v {{ font-size: 1.15rem; font-weight: 600; color: {TOTAL_COLOR}; margin-top: 0.15rem; }}
         .mini .s {{ font-size: 0.72rem; color: {MUTED}; margin-top: 0.1rem; }}
+
+        /* Cumulative distance-band table */
+        table.bands {{ width: 100%; border-collapse: collapse; font-size: 0.85rem; }}
+        table.bands th {{ font-size: 0.66rem; font-weight: 600; letter-spacing: 0.08em;
+                          text-transform: uppercase; color: {MUTED}; text-align: right;
+                          padding: 0 0.5rem 0.45rem 0.5rem;
+                          border-bottom: 1px solid {CARD_BORDER}; white-space: nowrap; }}
+        table.bands th:first-child {{ text-align: left; }}
+        table.bands td {{ text-align: right; padding: 0.34rem 0.5rem; color: {TOTAL_COLOR};
+                          border-bottom: 1px solid {GRID}; font-variant-numeric: tabular-nums; }}
+        table.bands td:first-child {{ text-align: left; color: {MUTED}; }}
+        table.bands tr:last-child td {{ border-bottom: none; font-weight: 600; }}
+
+        /* st.map has no legend of its own */
+        .map-legend {{ display: flex; gap: 1.4rem; flex-wrap: wrap; margin-top: 0.6rem;
+                       font-size: 0.78rem; color: {MUTED}; }}
+        .map-legend span {{ display: inline-flex; align-items: center; gap: 0.4rem; }}
+        .map-legend i {{ width: 10px; height: 10px; border-radius: 50%; display: inline-block; }}
         @media (max-width: 760px) {{ .mini {{ margin-left: 0; gap: 1.5rem; }} .mini > div {{ text-align: left; }} }}
         .bar {{ height: 4px; border-radius: 2px; background: {BAR_TRACK}; margin-top: 0.7rem; overflow: hidden; }}
         .bar > span {{ display: block; height: 100%; border-radius: 2px; }}
@@ -618,6 +655,97 @@ st.caption(
     f"{human(n_intl)} across {max(n_countries - 1, 0)} other countries"
 )
 
+# ------------------- distance from St. Louis landmarks --------------------- #
+st.write("")
+st.markdown('<div class="section-title">Distance from St. Louis landmarks</div>', unsafe_allow_html=True)
+st.markdown(
+    '<div class="section-sub">Missouri and Illinois members, cumulative counts by '
+    'straight-line distance from each landmark</div>',
+    unsafe_allow_html=True,
+)
+
+mo_il = df[df["State"].isin(["MO", "IL"])].copy()
+dist_cols = []
+for name, _addr, latlon in LANDMARKS:
+    col = f"dist::{name}"
+    dist_cols.append(col)
+    mo_il[col] = [distance_miles(latlon, geo_lookup.get(k)) for k in mo_il["GeoKey"]]
+
+mo_il_units = int(mo_il["Qty"].sum())
+furthest_band = DISTANCE_BANDS[-1]
+
+if mo_il.empty:
+    st.info("No Missouri or Illinois memberships in the current selection.")
+else:
+    nearest = mo_il[dist_cols].min(axis=1)
+    beyond = int(mo_il.loc[nearest > furthest_band, "Qty"].sum())
+
+    mcol, tcol = st.columns([2.2, 1], gap="large")
+
+    with mcol:
+        members = pd.DataFrame(
+            [(lat, lon, "Member (MO & IL)") for lat, lon in
+             (geo_lookup[k] for k in mo_il["GeoKey"])],
+            columns=["lat", "lon", "label"],
+        )
+
+        def scatter(data, fill, radius, min_px, max_px):
+            return pdk.Layer(
+                "ScatterplotLayer", data=data, get_position=["lon", "lat"],
+                get_fill_color=fill, get_radius=radius,
+                radius_min_pixels=min_px, radius_max_pixels=max_px, pickable=True,
+            )
+
+        layers = [scatter(members, MAP_MEMBER_RGB, 500, 4, 9)]
+        for (name, address, latlon), rgb in zip(LANDMARKS, MAP_LANDMARK_RGB):
+            layers.append(scatter(
+                pd.DataFrame([{"lat": latlon[0], "lon": latlon[1],
+                               "label": f"{name} — {address}"}]),
+                rgb, 1200, 9, 16,
+            ))
+
+        st.pydeck_chart(
+            pdk.Deck(
+                layers=layers,
+                initial_view_state=pdk.ViewState(
+                    latitude=MAP_CENTER[0], longitude=MAP_CENTER[1], zoom=MAP_ZOOM, pitch=0
+                ),
+                map_style="light",
+                tooltip={"html": "<b>{label}</b>", "style": {"fontSize": "12px"}},
+            ),
+            height=520, width="stretch",
+        )
+
+        legend = "".join(
+            f'<span><i style="background:{color}"></i>{name}</span>'
+            for name, color in [("Members (MO & IL)", MAP_MEMBER_COLOR)]
+            + [(n, c) for (n, _a, _l), c in zip(LANDMARKS, MAP_LANDMARK_COLORS)]
+        )
+        st.markdown(f'<div class="map-legend">{legend}</div>', unsafe_allow_html=True)
+        st.caption(
+            f"{human(mo_il_units)} memberships across "
+            f"{mo_il['State'].nunique()} states · "
+            f"{human(mo_il_units - beyond)} within {furthest_band} mi of a landmark · "
+            f"zoom {MAP_ZOOM} on St. Louis — drag or scroll to change the view"
+        )
+
+    with tcol:
+        header = "".join(f"<th>{name}</th>" for name, _a, _l in LANDMARKS)
+        body = ""
+        for band in DISTANCE_BANDS:
+            cells = "".join(
+                f"<td>{human(int(mo_il.loc[mo_il[col] <= band, 'Qty'].sum()))}</td>"
+                for col in dist_cols
+            )
+            body += f"<tr><td>{band} mi</td>{cells}</tr>"
+        st.markdown(
+            f'<table class="bands"><thead><tr><th>Within</th>{header}</tr></thead>'
+            f"<tbody>{body}</tbody></table>",
+            unsafe_allow_html=True,
+        )
+        st.caption("Cumulative — each figure includes everyone closer in.")
+
+
 # -------------------------------- footer ----------------------------------- #
 st.write("")
 with st.expander("About this data"):
@@ -642,6 +770,11 @@ Source: `data/2026-memberships.csv` · {len(df_all):,} order records · {int(df_
   treat it as indicative, not exact. Averages are weighted by quantity, so a
   two-membership order counts twice. The lookup lives in `data/geo_lookup.csv`; rerun
   `build_geo_lookup.py` after adding an export with new postcodes.
+- The landmark section counts Missouri and Illinois memberships within 5–50 mi
+  (straight-line) of Bishop DuBourg High School and Rockwell Beer. The map uses pydeck
+  rather than `st.map` because `st.map` centres on the data's bounding box, which the
+  Chicago and Kansas City members pull well away from St. Louis; pydeck pins the view and
+  controls marker size.
 - Country values are normalized (e.g. `US` / `United States` → United States); state
   abbreviations are cleaned and non-US regions are excluded from the state view.
 - Canceled orders are excluded by default ({int(df_all["Canceled"].sum())} in the file).
