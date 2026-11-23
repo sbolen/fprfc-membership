@@ -532,8 +532,8 @@ Source: `data/2026-memberships.csv` · {len(df_all):,} order records · {int(df_
 - Active split: {int(df_all.loc[~df_all["Canceled"] & (df_all["Tier"] == ROOTS), "Qty"].sum()):,} Roots +
   {int(df_all.loc[~df_all["Canceled"] & (df_all["Tier"] == FOUNDERS), "Qty"].sum()):,} Founders =
   {int(df_all.loc[~df_all["Canceled"], "Qty"].sum()):,} memberships.
-- This export is de-identified: first name, last name, street address and email have been
-  removed. City, state and postcode are retained.
+- This export is de-identified: first name, last name, street address, email and customer
+  note have been removed. City, state and postcode are retained.
 - Repeat purchases are counted separately (e.g. one member with three orders), but without
   an email column the dashboard can no longer tell repeat buyers apart.
 - Average new members per day is the filtered membership count divided by the number of

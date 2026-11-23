@@ -61,8 +61,9 @@ from the first to the last order in the selection (355 days for the full dataset
 - 1 canceled order (quantity 1), excluded by default: 457 active memberships
   (393 Roots + 64 Founders).
 - Repeat purchases count separately (one member has three orders). The export is
-  de-identified — first name, last name, street address and email are removed, so repeat
-  buyers can no longer be identified across rows. City, state and postcode are retained.
+  de-identified — first name, last name, street address, email and customer note are
+  removed, so repeat buyers can no longer be identified across rows. City, state and
+  postcode are retained.
 - `Country Code` mixes ISO codes and full names (`US` / `United States`); both normalize
   to United States. State/province values are trimmed and uppercased, and only US
   two-letter codes are used in the state view.
