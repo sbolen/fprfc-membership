@@ -8,8 +8,9 @@ from __future__ import annotations
 import base64
 import math
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 import plotly.graph_objects as go
@@ -17,6 +18,14 @@ import streamlit as st
 
 DATA_PATH = Path(__file__).parent / "data" / "2026-memberships.csv"
 LOGO_PATH = Path(__file__).parent / "assets" / "logo.png"
+
+# Timestamps display in the club's local time, whatever timezone the host runs in.
+# Streamlit Community Cloud runs in UTC, so without this the stamp would read in UTC.
+DISPLAY_TZ_NAME = "America/Chicago"
+try:
+    DISPLAY_TZ = ZoneInfo(DISPLAY_TZ_NAME)
+except Exception:  # tz database unavailable on the host -> fall back to UTC
+    DISPLAY_TZ = timezone.utc
 
 ROOTS = "Roots of the Club"
 FOUNDERS = "Founders Ring"
@@ -133,11 +142,11 @@ def fdate(ts: pd.Timestamp) -> str:
 
 
 def stamp(ts: float) -> str:
-    """Human-readable 'last updated' text from a file mtime."""
-    dt = datetime.fromtimestamp(ts)
+    """Human-readable 'last updated' text from a file mtime, in the club's timezone."""
+    dt = datetime.fromtimestamp(ts, tz=DISPLAY_TZ)
     hour = dt.hour % 12 or 12
     ampm = "AM" if dt.hour < 12 else "PM"
-    return f"{dt:%b} {dt.day}, {dt.year} · {hour}:{dt.minute:02d} {ampm}"
+    return f"{dt:%b} {dt.day}, {dt.year} · {hour}:{dt.minute:02d} {ampm} {dt.tzname()}"
 
 
 # --------------------------------------------------------------------------- #
