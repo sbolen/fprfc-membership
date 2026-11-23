@@ -21,7 +21,8 @@ the same hue (`#8cc9b4`). Neutral membership charts use `#02463a` with `#7ba394`
 ## Views
 
 - **Top-line numbers** — total memberships, total revenue, average new members per day,
-  Roots of the Club, Founders Ring, and countries represented.
+  Roots of the Club, Founders Ring, countries represented, and a full-width block showing
+  average distance from the reference address.
 - **Growth over time** — a Memberships / Revenue metric toggle, each with a Cumulative or
   New-per-week view, broken out by tier. Revenue uses the tier prices below.
 - **Geography** — members by US state (bar or choropleth map), a Members / Revenue toggle
@@ -53,6 +54,29 @@ the current filters.
 
 Average new members per day is the filtered membership count divided by the number of days
 from the first to the last order in the selection (355 days for the full dataset → 1.3/day).
+
+## Average distance
+
+Straight-line (great-circle) distance from `100 Washington Avenue, St. Louis, MO 63102`
+(38.6291, −90.1836). Street addresses were removed from the export, so each member's
+location is approximated by:
+
+- **US** — postcode centroid, ZIP+4 trimmed to 5 digits, from GeoNames via `pgeocode`
+- **International** — city centroid, from OpenStreetMap Nominatim
+
+Averages are weighted by quantity. The lookup is `data/geo_lookup.csv` (152 locations,
+100% coverage). After adding an export with new postcodes or cities, rebuild it:
+
+```bash
+.venv/bin/pip install pgeocode requests
+.venv/bin/python build_geo_lookup.py
+```
+
+Only locations not already in the lookup are queried, so re-running is cheap. Anything
+that can't be geocoded is excluded from the average and the card reports the coverage.
+
+Current figures: **206 mi** overall (7 international members average ~5,500 mi), **123 mi**
+for US members only, median **16 mi**, furthest **8,854 mi** (Ho Chi Minh City).
 
 ## Notes on the data
 

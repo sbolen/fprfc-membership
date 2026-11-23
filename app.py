@@ -17,7 +17,14 @@ import plotly.graph_objects as go
 import streamlit as st
 
 DATA_PATH = Path(__file__).parent / "data" / "2026-memberships.csv"
+GEO_PATH = Path(__file__).parent / "data" / "geo_lookup.csv"
 LOGO_PATH = Path(__file__).parent / "assets" / "logo.png"
+
+# Reference point for the distance metric. Members' locations are approximated by
+# postcode centroid (US) or city (international) since street addresses were removed.
+CLUB_ADDRESS = "100 Washington Avenue, St. Louis, MO 63102"
+CLUB_LATLON = (38.629148, -90.183638)
+EARTH_RADIUS_MI = 3958.7613
 
 # Timestamps display in the club's local time, whatever timezone the host runs in.
 # Streamlit Community Cloud runs in UTC, so without this the stamp would read in UTC.
@@ -96,18 +103,42 @@ def load_data(path: str, mtime: float) -> pd.DataFrame:
 
     country = df["Country Code"].str.upper()
     country = country.replace({"UNITED STATES": "US", "USA": "US"})
+    df["CountryISO"] = country
     df["Country"] = country.map(lambda c: COUNTRY_NAMES.get(c, c))
 
     state = df["State Code"].str.strip().str.upper()
     df["State"] = state.where(state.isin(US_STATES), "")
-    df["IsUS"] = df["Country"] == "United States"
+    df["IsUS"] = df["CountryISO"] == "US"
 
     df["Canceled"] = df["Status"].str.lower().eq("canceled")
 
     # "Item #" in the export is the quantity purchased for that line item.
     df["Qty"] = pd.to_numeric(df["Item #"], errors="coerce").fillna(1).clip(lower=1).astype(int)
     df["Revenue"] = df["Qty"] * df["Tier"].map(TIER_PRICES)
+
+    # Location key for the offline geocode lookup: postcode for the US (ZIP+4 trimmed),
+    # otherwise city. Street addresses were removed from the export, so this is the
+    # finest granularity available.
+    zip5 = df["Postcode"].str.split("-").str[0]
+    df["GeoKey"] = df["CountryISO"] + "|" + zip5.where(df["IsUS"], df["City"].str.upper())
     return df.sort_values("Order Date").reset_index(drop=True)
+
+
+@st.cache_data(show_spinner=False)
+def load_geo(path: str, mtime: float) -> dict[str, tuple[float, float]]:
+    """Offline lookup of location key -> (lat, lon). Regenerate with build_geo_lookup.py."""
+    geo = pd.read_csv(path)
+    return {f"{r.country}|{r.key}": (float(r.lat), float(r.lon)) for r in geo.itertuples()}
+
+
+def distance_miles(a: tuple[float, float], b: tuple[float, float] | None) -> float | None:
+    """Great-circle (straight-line) distance in miles, or None if b is unknown."""
+    if b is None or any(pd.isna(x) for x in (*a, *b)):
+        return None
+    lat1, lon1, lat2, lon2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+    h = (math.sin((lat2 - lat1) / 2) ** 2
+         + math.cos(lat1) * math.cos(lat2) * math.sin((lon2 - lon1) / 2) ** 2)
+    return 2 * EARTH_RADIUS_MI * math.asin(math.sqrt(h))
 
 
 def chart_layout(fig: go.Figure, height: int = 340, **kwargs) -> go.Figure:
@@ -195,6 +226,18 @@ st.markdown(
         .cards {{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }}
         @media (max-width: 1100px) {{ .cards {{ grid-template-columns: repeat(2, 1fr); }} }}
         @media (max-width: 620px) {{ .cards {{ grid-template-columns: 1fr; }} }}
+
+        /* Wide card: headline figure on the left, supporting stats on the right. */
+        .card-wide {{ grid-column: 1 / -1; display: flex; align-items: center;
+                      gap: 1.5rem 2.5rem; flex-wrap: wrap; }}
+        .card-wide .wide-main {{ min-width: 220px; }}
+        .mini {{ display: flex; gap: 2.2rem; margin-left: auto; flex-wrap: wrap; }}
+        .mini > div {{ text-align: right; }}
+        .mini .k {{ font-size: 0.68rem; font-weight: 600; letter-spacing: 0.09em;
+                    text-transform: uppercase; color: {MUTED}; white-space: nowrap; }}
+        .mini .v {{ font-size: 1.15rem; font-weight: 600; color: {TOTAL_COLOR}; margin-top: 0.15rem; }}
+        .mini .s {{ font-size: 0.72rem; color: {MUTED}; margin-top: 0.1rem; }}
+        @media (max-width: 760px) {{ .mini {{ margin-left: 0; gap: 1.5rem; }} .mini > div {{ text-align: left; }} }}
         .bar {{ height: 4px; border-radius: 2px; background: {BAR_TRACK}; margin-top: 0.7rem; overflow: hidden; }}
         .bar > span {{ display: block; height: 100%; border-radius: 2px; }}
         .accent-total {{ border-left: 3px solid {CONTROL_COLOR}; }}
@@ -203,6 +246,7 @@ st.markdown(
         .accent-roots {{ border-left: 3px solid {ROOTS_COLOR}; }}
         .accent-founders {{ border-left: 3px solid {FOUNDERS_COLOR}; }}
         .accent-world {{ border-left: 3px solid {CONTROL_COLOR}; }}
+        .accent-distance {{ border-left: 3px solid {CONTROL_COLOR}; }}
 
         .subhead {{ font-size: 0.95rem; font-weight: 600; color: {TOTAL_COLOR}; }}
         .hint {{ color: {MUTED}; font-weight: 400; font-size: 0.8rem; }}
@@ -233,7 +277,12 @@ with st.sidebar:
 
 df = df_all[~df_all["Canceled"]] if not include_canceled else df_all.copy()
 df = df[df["Tier"].isin(tiers)]
-df = df[(df["Order Date"].dt.date >= date_range[0]) & (df["Order Date"].dt.date <= date_range[1])]
+df = df[(df["Order Date"].dt.date >= date_range[0]) & (df["Order Date"].dt.date <= date_range[1])].copy()
+
+# Straight-line distance from the reference address, via the offline geocode lookup.
+# Members' locations are postcode centroids (US) or city centroids (international).
+geo_lookup = load_geo(str(GEO_PATH), GEO_PATH.stat().st_mtime)
+df["Distance"] = [distance_miles(CLUB_LATLON, geo_lookup.get(k)) for k in df["GeoKey"]]
 
 if df.empty:
     st.title("Membership Dashboard")
@@ -302,6 +351,31 @@ founders_revenue = float(df.loc[df["Tier"] == FOUNDERS, "Revenue"].sum())
 days_span = max((df["Order Date"].max().normalize() - df["Order Date"].min().normalize()).days + 1, 1)
 avg_per_day = n_total / days_span
 
+# Distance stats (weighted by quantity, so a 2-membership order counts twice).
+geo_ok = df["Distance"].notna()
+dist_units = int(df.loc[geo_ok, "Qty"].sum())
+
+
+def weighted_mean(sub: pd.DataFrame) -> float | None:
+    if sub.empty or sub["Qty"].sum() == 0:
+        return None
+    return float((sub["Distance"] * sub["Qty"]).sum() / sub["Qty"].sum())
+
+
+dist_mean = weighted_mean(df[geo_ok])
+dist_us_mean = weighted_mean(df[geo_ok & df["IsUS"]])
+dist_median = float(df.loc[geo_ok, "Distance"].median()) if geo_ok.any() else None
+dist_max = float(df.loc[geo_ok, "Distance"].max()) if geo_ok.any() else None
+dist_max_city = df.loc[df["Distance"].idxmax(), "City"] if geo_ok.any() else ""
+
+
+def mi(v: float | None) -> str:
+    return f"{v:,.0f} mi" if v is not None else "—"
+
+
+dist_note = (f"straight-line from {CLUB_ADDRESS}" if dist_units == n_total
+             else f"from {CLUB_ADDRESS} · {dist_units} of {n_total} located")
+
 st.markdown(
     f"""
     <div class="cards">
@@ -336,6 +410,18 @@ st.markdown(
         <div class="label">Countries</div>
         <div class="value">{n_countries}</div>
         <div class="note">{human(n_intl)} international members</div>
+      </div>
+      <div class="card card-wide accent-distance">
+        <div class="wide-main">
+          <div class="label">Avg distance from club</div>
+          <div class="value">{mi(dist_mean)}</div>
+          <div class="note">{dist_note}</div>
+        </div>
+        <div class="mini">
+          <div><div class="k">US members</div><div class="v">{mi(dist_us_mean)}</div></div>
+          <div><div class="k">Median</div><div class="v">{mi(dist_median)}</div></div>
+          <div><div class="k">Furthest</div><div class="v">{mi(dist_max)}</div><div class="s">{dist_max_city}</div></div>
+        </div>
       </div>
     </div>
     """,
@@ -547,6 +633,12 @@ Source: `data/2026-memberships.csv` · {len(df_all):,} order records · {int(df_
   an email column the dashboard can no longer tell repeat buyers apart.
 - Average new members per day is the filtered membership count divided by the number of
   days from the first to the last order in the current selection.
+- Average distance is straight-line (great-circle) from {CLUB_ADDRESS}. Because street
+  addresses were removed, each member's location is approximated by their postcode
+  centroid (US, from GeoNames) or city centroid (international, from OpenStreetMap) — so
+  treat it as indicative, not exact. Averages are weighted by quantity, so a
+  two-membership order counts twice. The lookup lives in `data/geo_lookup.csv`; rerun
+  `build_geo_lookup.py` after adding an export with new postcodes.
 - Country values are normalized (e.g. `US` / `United States` → United States); state
   abbreviations are cleaned and non-US regions are excluded from the state view.
 - Canceled orders are excluded by default ({int(df_all["Canceled"].sum())} in the file).
