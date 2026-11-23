@@ -8,6 +8,7 @@ from __future__ import annotations
 import base64
 import math
 import re
+from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
@@ -131,6 +132,14 @@ def fdate(ts: pd.Timestamp) -> str:
     return f"{ts:%b} {ts.day}, {ts.year}"
 
 
+def stamp(ts: float) -> str:
+    """Human-readable 'last updated' text from a file mtime."""
+    dt = datetime.fromtimestamp(ts)
+    hour = dt.hour % 12 or 12
+    ampm = "AM" if dt.hour < 12 else "PM"
+    return f"{dt:%b} {dt.day}, {dt.year} · {hour}:{dt.minute:02d} {ampm}"
+
+
 # --------------------------------------------------------------------------- #
 # Page
 # --------------------------------------------------------------------------- #
@@ -151,6 +160,14 @@ st.markdown(
         .header .crest {{ height: 78px; width: 78px; display: block; flex: 0 0 auto; }}
         .header .header-text {{ min-width: 0; }}
         .header h1 {{ margin: 0; }}
+        .header .stamp {{ margin-left: auto; text-align: right; flex: 0 0 auto; padding-left: 1rem; }}
+        .header .stamp .eyebrow {{ margin-bottom: 0.15rem; }}
+        .stamp-value {{ font-size: 0.86rem; font-weight: 600; color: {TOTAL_COLOR}; white-space: nowrap; }}
+        .stamp-sub {{ font-size: 0.75rem; color: {MUTED}; margin-top: 0.1rem; white-space: nowrap; }}
+        @media (max-width: 760px) {{
+            .header {{ flex-wrap: wrap; }}
+            .header .stamp {{ margin-left: 0; text-align: left; padding-left: 0; }}
+        }}
         @media (max-width: 620px) {{ .header .crest {{ height: 58px; width: 58px; }} }}
 
         .subtitle {{ color: {MUTED}; font-size: 0.92rem; margin-bottom: 1.6rem; }}
@@ -190,7 +207,8 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-df_all = load_data(str(DATA_PATH), DATA_PATH.stat().st_mtime)
+data_mtime = DATA_PATH.stat().st_mtime
+df_all = load_data(str(DATA_PATH), data_mtime)
 
 # ------------------------------- sidebar ----------------------------------- #
 with st.sidebar:
@@ -250,6 +268,11 @@ st.markdown(
       <div class="header-text">
         <div class="eyebrow">FPRFC · 2026</div>
         <h1>Membership Dashboard</h1>
+      </div>
+      <div class="stamp">
+        <div class="eyebrow">Last updated</div>
+        <div class="stamp-value">{stamp(data_mtime)}</div>
+        <div class="stamp-sub">data through {fdate(df_all["Order Date"].max())}</div>
       </div>
     </div>
     """,
