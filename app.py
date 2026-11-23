@@ -657,7 +657,7 @@ st.caption(
 
 # ------------------- distance from St. Louis landmarks --------------------- #
 st.write("")
-st.markdown('<div class="section-title">Distance from St. Louis landmarks</div>', unsafe_allow_html=True)
+st.markdown('<div class="section-title">Proximity to Club Landmarks</div>', unsafe_allow_html=True)
 st.markdown(
     '<div class="section-sub">Missouri and Illinois members, cumulative counts by '
     'straight-line distance from each landmark</div>',
