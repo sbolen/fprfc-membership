@@ -1,0 +1,102 @@
+Store,Order,Status,Total,Date,City,State Code,Postcode,Country Code
+Personal orders,#PF158975495,Canceled,$0.00,"May 18, 2026",Saint Louis,MO,63139,US
+Forest Park Rangers FC,#FPR-1229,Waiting for Fulfillment,$38.54,"November 24, 2026",Staunton,IL,62088,US
+Forest Park Rangers FC,#FPR-1230,Waiting for Fulfillment,$39.18,"November 24, 2026",Maryland Heights,MO,63043,US
+Forest Park Rangers FC,#FPR-1233,Waiting for Fulfillment,$41.84,"November 25, 2026",St. Louis,MO,63122,US
+Forest Park Rangers FC,#FPR-1237,Waiting for Fulfillment,$38.54,"November 26, 2026",St. Louis,MO,63128,US
+Forest Park Rangers FC,#FPR-1238,Waiting for Fulfillment,$38.63,"November 26, 2026",Saint Charles,MO,63301,US
+Forest Park Rangers FC,#FPR-1239,Waiting for Fulfillment,$45.34,"November 26, 2026",Nashville,IL,62263,US
+Forest Park Rangers FC,#FPR-1240,Waiting for Fulfillment,$35.88,"November 26, 2026",SAINT LOUIS,MO,63110,US
+Forest Park Rangers FC,#FPR-1223,Being Fulfilled,$148.79,"November 23, 2026",Wentzville,MO,63385,US
+Forest Park Rangers FC,#FPR-1235,Being Fulfilled,$98.83,"November 25, 2026",Wildwood,MO,63005,US
+Forest Park Rangers FC,#FPR-1236,Being Fulfilled,$69.45,"November 25, 2026",St Charles,MO,63301,US
+Personal orders,#PF156908214,Fulfilled,$43.68,"May 2, 2026",Saint Louis,MO,63117,US
+Personal orders,#PF158888801,Fulfilled,$22.89,"May 18, 2026",Saint Louis,MO,63117,US
+Personal orders,#PF158954495,Fulfilled,$245.07,"May 18, 2026",O Fallon,MO,63368,US
+Forest Park Rangers FC,#PF159482000,Fulfilled,$86.70,"May 22, 2026",Saint Louis,MO,63139,US
+Forest Park Rangers FC,#1003,Fulfilled,$32.64,"May 26, 2026",SAINT LOUIS,MO,63117,US
+Forest Park Rangers FC,#1004,Fulfilled,$118.59,"May 27, 2026",O fallon,MO,63368,US
+Forest Park Rangers FC,#FPR-1005,Fulfilled,$66.37,"May 28, 2026",St. Peters,MO,63304,US
+Forest Park Rangers FC,#FPR-1006,Fulfilled,$225.61,"May 28, 2026",Columbia,MO,65202,US
+Forest Park Rangers FC,#FPR-1007,Fulfilled,$18.08,"May 28, 2026",Saint Louis,MO,63119,US
+Forest Park Rangers FC,#FPR-1008,Fulfilled,$143.71,"May 28, 2026",O'Fallon,MO,63368,US
+Forest Park Rangers FC,#FPR-1009,Fulfilled,$42.33,"May 28, 2026",Chesterfield,MO,63005,US
+Forest Park Rangers FC,#FPR-1010,Fulfilled,$55.31,"May 28, 2026",Chesterfield,MO,63017,US
+Forest Park Rangers FC,#FPR-1011,Fulfilled,$34.67,"May 28, 2026",Saint Louis,MO,63119,US
+Forest Park Rangers FC,#FPR-1012,Fulfilled,$28.52,"May 28, 2026",SAINT LOUIS,MO,63117,US
+Forest Park Rangers FC,#FPR-1013,Fulfilled,$120.64,"May 28, 2026",St. Louis,MO,63116,US
+Forest Park Rangers FC,#FPR-1014,Fulfilled,$23.92,"May 28, 2026",Saint Louis,MO,63109-1357,US
+Forest Park Rangers FC,#FPR-1015,Fulfilled,$44.10,"May 29, 2026",St. Louis,MO,63108,US
+Forest Park Rangers FC,#FPR-1016,Fulfilled,$18.08,"May 29, 2026",St. Louis,MO,63109,US
+Forest Park Rangers FC,#FPR-1017,Fulfilled,$92.69,"June 1, 2026",Saint Charles,MO,63301,US
+Forest Park Rangers FC,#FPR-1018,Fulfilled,$14.28,"May 30, 2026",St Charles,MO,63301,US
+Forest Park Rangers FC,#FPR-1019,Fulfilled,$51.48,"June 1, 2026",Saint Louis,MO,63109,US
+Forest Park Rangers FC,#PF160545923,Fulfilled,$70.74,"May 31, 2026",Saint Louis,MO,63139,US
+Forest Park Rangers FC,#FPR-1020,Fulfilled,$21.48,"June 1, 2026",Saint Louis,MO,63110,US
+Forest Park Rangers FC,#FPR-1021,Fulfilled,$16.66,"June 1, 2026",SAINT LOUIS,MO,63117,US
+Forest Park Rangers FC,#FPR-1022,Fulfilled,$55.68,"June 2, 2026",Melbourne,FL,32934,US
+Forest Park Rangers FC,#FPR-1023,Fulfilled,$83.04,"June 2, 2026",Wildwood,MO,63005,US
+Forest Park Rangers FC,#FPR-1024,Fulfilled,$89.68,"June 5, 2026",St. Louis,MO,63109,US
+Forest Park Rangers FC,#FPR-1025,Fulfilled,$43.40,"June 5, 2026",West Hartford,CT,06107,US
+Forest Park Rangers FC,#FPR-1026,Fulfilled,$14.28,"June 6, 2026",St Charles,MO,63301,US
+Forest Park Rangers FC,#FPR-1027,Fulfilled,$53.01,"June 7, 2026",St. Louis,MO,63139,US
+Forest Park Rangers FC,#FPR-1028,Fulfilled,$98.35,"June 7, 2026",Saint Louis,MO,63122,US
+Forest Park Rangers FC,#FPR-1029,Fulfilled,$20.86,"June 9, 2026",Chicago,IL,60625,US
+Forest Park Rangers FC,#FPR-1030,Fulfilled,$90.46,"June 10, 2026",Webster Groves,MO,63119,US
+Personal orders,#PF162343186,Fulfilled,$42.54,"June 13, 2026",Saint Louis,MO,63122,US
+Forest Park Rangers FC,#FPR-1031,Fulfilled,$116.39,"June 13, 2026",Kirkwood,MO,63122,US
+Forest Park Rangers FC,#FPR-1032,Fulfilled,$126.89,"June 14, 2026",Wildwood,MO,63005,US
+Forest Park Rangers FC,#FPR-1033,Fulfilled,$39.17,"June 15, 2026",Phoenix,AZ,85027,US
+Forest Park Rangers FC,#FPR-1034,Fulfilled,$197.57,"June 20, 2026",St. Charles,MO,63304,US
+Forest Park Rangers FC,#FPR-1035,Fulfilled,$21.48,"June 22, 2026",Catawissa,MO,63015,US
+Personal orders,#PF163776299,Fulfilled,$23.24,"June 22, 2026",Saint Louis,MO,63117,US
+Forest Park Rangers FC,#FPR-1036,Fulfilled,$20.86,"June 23, 2026",St. Louis,MO,63110,US
+Forest Park Rangers FC,#FPR-1037,Fulfilled,$178.79,"June 25, 2026",O Fallon,MO,63368,US
+Forest Park Rangers FC,#FPR-1038,Fulfilled,$69.56,"June 29, 2026",Saint Charles,MO,63301-8506,US
+Forest Park Rangers FC,#FPR-1039,Fulfilled,$65.14,"July 15, 2026",O fallon,MO,63368,US
+Forest Park Rangers FC,#FPR-1040,Fulfilled,$27.93,"July 17, 2026",O Fallon,IL,62269,US
+Forest Park Rangers FC,#FPR-1041,Fulfilled,$34.67,"July 17, 2026",Kirkwood,MO,63122,US
+Forest Park Rangers FC,#FPR-1042,Fulfilled,$34.67,"July 18, 2026",ST LOUIS,MO,63105,US
+Forest Park Rangers FC,#FPR-1043,Fulfilled,$118.44,"July 19, 2026",Saint Louis,MO,63104,US
+Forest Park Rangers FC,#FPR-1044,Fulfilled,$56.28,"August 1, 2026",O'Fallon,MO,63368,US
+Forest Park Rangers FC,#FPR-1045,Fulfilled,$22.51,"August 11, 2026",New Athens,IL,62264,US
+Forest Park Rangers FC,#FPR-1046,Fulfilled,$35.48,"August 27, 2026",Bethalto,IL,62010,US
+Forest Park Rangers FC,#FPR-1047,Fulfilled,$39.93,"August 28, 2026",Edwardsville,IL,62025-3174,US
+Forest Park Rangers FC,#FPR-1048,Fulfilled,$35.87,"September 7, 2026",Foristell,MO,63348,US
+Forest Park Rangers FC,#FPR-1049,Fulfilled,$99.42,"September 7, 2026",Saint Louis,MO,63109,US
+Forest Park Rangers FC,#FPR-1050,Fulfilled,$18.55,"September 7, 2026",Saint Louis,MO,63104-2533,US
+Forest Park Rangers FC,#FPR-1051,Fulfilled,$49.31,"September 9, 2026",Kirkwood,MO,63122,US
+Forest Park Rangers FC,#PF175961849,Fulfilled,$18.65,"September 11, 2026",Saint Louis,MO,63116,US
+Forest Park Rangers FC,#FPR-1052,Fulfilled,$17.05,"September 12, 2026",St Louis,MO,63116,US
+Forest Park Rangers FC,#FPR-1053,Fulfilled,$59.08,"September 19, 2026",St. Louis,MO,63109,US
+Forest Park Rangers FC,#FPR-1054,Fulfilled,$35.48,"September 20, 2026",Glen Carbon,IL,62034,US
+Forest Park Rangers FC,#PF178014388,Fulfilled,$85.79,"September 25, 2026",Saint Louis,MO,63122,US
+Forest Park Rangers FC,#FPR-1056,Fulfilled,$21.34,"September 26, 2026",St. Louis,MO,63139,US
+Forest Park Rangers FC,#FPR-1057,Fulfilled,$21.34,"September 28, 2026",Saint Louis,MO,63110,US
+Forest Park Rangers FC,#FPR-1058,Fulfilled,$49.78,"October 6, 2026",St Louis,MO,63119,US
+Forest Park Rangers FC,#FPR-1059,Fulfilled,$35.48,"October 7, 2026",Saint Louis,MO,63109,US
+Forest Park Rangers FC,#FPR-1060,Fulfilled,$21.34,"October 10, 2026",Staunton,IL,62088,US
+Forest Park Rangers FC,#FPR-1061,Fulfilled,$7.91,"October 10, 2026",St. Louis,MO,63144,US
+Forest Park Rangers FC,#FPR-1062,Fulfilled,$57.28,"October 11, 2026",St. Louis,MO,63116,US
+Forest Park Rangers FC,#FPR-1063,Fulfilled,$31.86,"October 12, 2026",SAINT LOUIS,MO,63110,US
+Forest Park Rangers FC,#FPR-1064,Fulfilled,$7.91,"October 14, 2026",SAINT LOUIS,MO,63117,US
+Forest Park Rangers FC,#FPR-1068,Fulfilled,$39.37,"October 16, 2026",O'Fallon,MO,63368,US
+Forest Park Rangers FC,#FPR-1071,Fulfilled,$35.05,"October 20, 2026",Saint Louis,MO,63117,US
+Forest Park Rangers FC,#FPR-1090,Fulfilled,$35.88,"October 22, 2026",Florissant,MO,63034,US
+Forest Park Rangers FC,#FPR-1100,Fulfilled,$122.80,"October 24, 2026",Clemmons,NC,27012,US
+Forest Park Rangers FC,#FPR-1105,Fulfilled,$48.29,"October 25, 2026",Williamsburg,VA,23185,US
+Forest Park Rangers FC,#FPR-1115,Fulfilled,$24.95,"October 28, 2026",Saint Louis,MO,63104,US
+Forest Park Rangers FC,#FPR-1116,Fulfilled,$22.35,"October 30, 2026",O Fallon,IL,62269,US
+Forest Park Rangers FC,#FPR-1118,Fulfilled,$23.39,"October 31, 2026",Webster Groves,MO,63119,US
+Forest Park Rangers FC,#FPR-1119,Fulfilled,$35.97,"October 31, 2026",St louis,MO,63116-4805,US
+Forest Park Rangers FC,#FPR-1120,Fulfilled,$59.67,"November 3, 2026",FLORISSANT,MO,63031,US
+Forest Park Rangers FC,#FPR-1122,Fulfilled,$82.56,"November 5, 2026",Columbia,MO,65203-1673,US
+Forest Park Rangers FC,#FPR-1147,Fulfilled,$21.74,"November 9, 2026",Green Bay,WI,54303,US
+Forest Park Rangers FC,#FPR-1149,Fulfilled,$24.95,"November 9, 2026",Cottleville,MO,63304,US
+Forest Park Rangers FC,#FPR-1202,Fulfilled,$68.17,"November 14, 2026",St. Louis,MO,63118,US
+Personal orders,#PF187492769,Fulfilled,$62.43,"November 16, 2026",Saint Louis,MO,63117,US
+Forest Park Rangers FC,#FPR-1214,Fulfilled,$57.30,"November 18, 2026",O fallon,MO,63368,US
+Forest Park Rangers FC,#FPR-1218,Fulfilled,$35.88,"November 19, 2026",University City,MO,63130,US
+Forest Park Rangers FC,#FPR-1228,Fulfilled,$58.95,"November 24, 2026",Mount Olive,IL,62069,US
+Forest Park Rangers FC,#FPR-1231,Fulfilled,$41.46,"November 24, 2026",Columbia,MO,65202,US
+Forest Park Rangers FC,#FPR-1232,Fulfilled,$104.03,"November 25, 2026",St. Louis,MO,63104,US

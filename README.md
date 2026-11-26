@@ -1,7 +1,18 @@
-# FPRFC Membership Dashboard
+# FPRFC Dashboard
 
-Streamlit dashboard for the 2026 membership export in `data/2026-memberships.csv`.
+Streamlit dashboard with two pages — **Membership** (`data/2026-memberships.csv`) and
+**Merchandise** (`data/printful-orders.csv`). Both are de-identified.
 The club crest in `assets/logo.png` is shown in the header and used as the favicon.
+
+## Structure
+
+```
+app.py                  entry point + st.navigation
+common.py               palette, formatting helpers, page CSS
+views/membership.py     membership page
+views/merchandise.py    merchandise page
+build_geo_lookup.py     regenerates data/geo_lookup.csv
+```
 
 ## Brand palette
 
@@ -15,10 +26,9 @@ The club crest in `assets/logo.png` is shown in the header and used as the favic
 
 Revenue charts stay in the revenue green; the tier split within them uses a lighter tint of
 the same hue (`#8cc9b4`). Neutral membership charts use `#02463a` with `#7ba394` for the
-"other" group. The palette lives in the constants block at the top of `app.py` and in
-`.streamlit/config.toml`.
+"other" group. The palette lives in `common.py` and `.streamlit/config.toml`.
 
-## Views
+## Membership page
 
 - **Top-line numbers** — total memberships, total revenue, average new members per day,
   Roots of the Club, Founders Ring, countries represented, and a full-width block showing
@@ -33,6 +43,19 @@ the same hue (`#8cc9b4`). Neutral membership charts use `#02463a` with `#7ba394`
 
 Sidebar filters: date range, membership tier, and whether to include canceled orders
 (excluded by default). Filtered data can be downloaded from the bottom of the page.
+
+## Merchandise page
+
+Printful order export, May–Nov 2026.
+
+- **Top-line numbers** — orders, gross sales, average order value, fulfilled, in progress,
+  states shipped to.
+- **Sales over time** — revenue per month, or cumulative.
+- **Order status** and **where orders ship** (top states, with order count and value).
+- **Recent orders** — the 12 most recent, without buyer names or street addresses.
+
+Sidebar filters: date range, store (Forest Park Rangers FC / Personal orders), and whether
+to include canceled orders. Totals are Printful order totals, not net of fulfilment costs.
 
 ## Run
 
@@ -83,6 +106,8 @@ for US members only, median **16 mi**, furthest **8,854 mi** (Ho Chi Minh City).
 
 ## Notes on the data
 
+### Membership export
+
 - 456 order records, 458 memberships: `Item #` is the quantity purchased, and two orders
   (both Roots of the Club) have quantity 2. All counts on the dashboard sum quantity.
 - 1 canceled order (quantity 1), excluded by default: 457 active memberships
@@ -95,3 +120,14 @@ for US members only, median **16 mi**, furthest **8,854 mi** (Ho Chi Minh City).
   to United States. State/province values are trimmed and uppercased, and only US
   two-letter codes are used in the state view.
 - Order dates arrive in two formats (`M/D/YYYY H:MM` and `YYYY-MM-DD H:MM`); both are parsed.
+
+### Printful export
+
+- 101 orders from two stores (Forest Park Rangers FC, Personal orders), May–Nov 2026,
+  $5,732.19 gross.
+- **De-identified the same way**: the `Address` column arrived holding the recipient's
+  name and street address. It was parsed into `City`, `State Code`, `Postcode` and
+  `Country Code`, and the name/street were dropped before the file was committed. The raw
+  export is not in the repository.
+- 1 canceled order ($0.00), excluded by default.
+- Totals are Printful order totals and are not net of fulfilment or shipping costs.
