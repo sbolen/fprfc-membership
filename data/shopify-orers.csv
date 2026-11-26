@@ -1,0 +1,387 @@
+Name,Created at,Financial Status,Fulfillment Status,Cancelled at,Refunded Amount,Subtotal,Shipping,Taxes,Total,Lineitem quantity,Lineitem name,Lineitem price,Lineitem sku
+FPR-1240,2026-11-26 10:58:12 -0600,paid,unfulfilled,,0.0,34.0,9.19,0.0,43.19,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - M,40.0,8978766_21933
+FPR-1239,2026-11-26 10:54:36 -0600,paid,unfulfilled,,0.0,50.0,10.04,0.0,60.04,1,Secondary Crest and Wordmark Short Sleeve T-shirt - Forest Green - 2XL,25.0,6446954_6525
+FPR-1239,2026-11-26 10:54:36 -0600,,,,,,,,,1,Secondary Crest Dad Hat - Forest Green,25.0,8784527_8745
+FPR-1238,2026-11-26 05:56:26 -0600,paid,unfulfilled,,0.0,29.75,9.28,0.0,39.03,1,Sunrise Crest Hoodie - Oatmeal Heather - L,35.0,3052391_24977
+FPR-1237,2026-11-25 23:10:48 -0600,paid,unfulfilled,,0.0,29.75,9.19,0.0,38.94,1,Sunrise Crest Hoodie - Oatmeal Heather - L,35.0,3052391_24977
+FPR-1236,2026-11-25 15:29:07 -0600,paid,unfulfilled,,0.0,80.75,13.39,0.0,94.14,1,Embroidered Secondary Crest Windbreaker - Forest Green - XL,40.0,1083724_16432
+FPR-1236,2026-11-25 15:29:07 -0600,,,,,,,,,1,Secondary Crest Waffle Beanie - Birch,25.0,9651267_16174
+FPR-1236,2026-11-25 15:29:07 -0600,,,,,,,,,1,Primary Crest Long Sleeve T-Shirt - Heather Forest - L,30.0,4002645_16153
+FPR-1235,2026-11-25 13:40:20 -0600,paid,unfulfilled,,0.0,106.25,17.88,0.0,124.13,1,Secondary Crest Columbia Booney Hat - Khaki,35.0,4896116_19655
+FPR-1235,2026-11-25 13:40:20 -0600,,,,,,,,,1,Sunrise Crest Organic Dad Hat - Oyster,25.0,2819025_12692
+FPR-1235,2026-11-25 13:40:20 -0600,,,,,,,,,1,Eco Tote Bag,25.0,4639055_10458
+FPR-1235,2026-11-25 13:40:20 -0600,,,,,,,,,1,Embroidered Secondary Crest Windbreaker - Forest Green - XL,40.0,1083724_16432
+FPR-1234,2026-11-25 10:17:20 -0600,paid,unfulfilled,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1234,2026-11-25 10:17:20 -0600,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1233,2026-11-25 10:08:32 -0600,paid,unfulfilled,,0.0,29.75,9.19,0.0,38.94,1,Sunrise Crest Hoodie - Oatmeal Heather - 3XL,35.0,3052391_24980
+FPR-1232,2026-11-24 19:01:55 -0600,paid,fulfilled,,0.0,80.75,18.48,0.0,99.23,1,Secondary Crest Adidas Quarter Zip - White - 3XL,65.0,1842949_13360
+FPR-1232,2026-11-24 19:01:55 -0600,,,,,,,,,1,Primary Crest CamelBak Water Bottle - Clear,30.0,8614120_22017
+FPR-1231,2026-11-24 17:56:42 -0600,paid,fulfilled,,0.0,34.0,9.19,0.0,43.19,1,Unisex FPRFC Script Hoodie - 2XL,40.0,4125038_16166
+FPR-1230,2026-11-24 17:38:05 -0600,paid,unfulfilled,,0.0,40.0,9.19,0.0,49.19,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - 3XL,40.0,8978766_21937
+FPR-1229,2026-11-24 15:59:48 -0600,paid,unfulfilled,,0.0,29.75,9.19,0.0,38.94,1,Sunrise Crest Hoodie - Oatmeal Heather - XL,35.0,3052391_24978
+FPR-1228,2026-11-24 15:47:21 -0600,paid,fulfilled,,0.0,55.25,11.19,0.0,66.44,1,Secondary Crest Waffle Beanie - Birch,25.0,9651267_16174
+FPR-1228,2026-11-24 15:47:21 -0600,,,,,,,,,1,Unisex FPRFC Script Hoodie - 2XL,40.0,4125038_16166
+FPR-1227,2026-11-24 15:21:30 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1226,2026-11-24 06:17:24 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1225,2026-11-23 18:14:19 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1224,2026-11-23 11:58:38 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1223,2026-11-22 19:47:46 -0600,paid,unfulfilled,,0.0,161.5,22.59,1.7,185.79,1,Crest and Wordmark T-Shirt - Heather Prism Mint - L,25.0,8013941_9383
+FPR-1223,2026-11-22 19:47:46 -0600,,,,,,,,,1,Secondary Crest and Wordmark Short Sleeve T-shirt - Forest Green - L,25.0,6446954_6523
+FPR-1223,2026-11-22 19:47:46 -0600,,,,,,,,,1,Secondary Crest Hoodie - Forest - XL,35.0,7178280_34410
+FPR-1223,2026-11-22 19:47:46 -0600,,,,,,,,,1,Secondary Crest Waffle Beanie - Birch,25.0,9651267_16174
+FPR-1223,2026-11-22 19:47:46 -0600,,,,,,,,,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - 2XL,40.0,8978766_21936
+FPR-1223,2026-11-22 19:47:46 -0600,,,,,,,,,1,Junior Rangers Toddler T-Shirt - Heather Gray - 3,15.0,1833119_12615
+FPR-1223,2026-11-22 19:47:46 -0600,,,,,,,,,1,Primary Crest Toddler Hoodie - Kelly Green - 4T,25.0,6033206_23937
+FPR-1222,2026-11-22 16:34:41 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1221,2026-11-20 14:20:07 -0600,paid,partial,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1221,2026-11-20 14:20:07 -0600,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1220,2026-11-20 13:21:57 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1219,2026-11-19 09:23:38 -0600,paid,partial,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1219,2026-11-19 09:23:38 -0600,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1218,2026-11-19 00:16:32 -0600,paid,partial,,0.0,65.0,15.19,0.0,80.19,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - S,40.0,8978766_21932
+FPR-1218,2026-11-19 00:16:32 -0600,,,,,,,,,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1218,2026-11-19 00:16:32 -0600,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1217,2026-11-18 18:35:22 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1216,2026-11-18 14:21:58 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1215,2026-11-18 11:23:17 -0600,paid,unfulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1214,2026-11-17 21:41:34 -0600,paid,fulfilled,,0.0,65.0,11.19,0.0,76.19,1,Secondary Crest Waffle Beanie - Birch,25.0,9651267_16174
+FPR-1214,2026-11-17 21:41:34 -0600,,,,,,,,,1,Unisex FPRFC Script Hoodie - L,40.0,4125038_16164
+FPR-1213,2026-11-16 12:53:15 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1212,2026-11-16 10:23:25 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1211,2026-11-15 22:17:16 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1210,2026-11-15 18:07:21 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1209,2026-11-15 14:43:46 -0600,paid,partial,,0.0,25.0,6.0,0.0,31.0,1,2026 Founding Member Scarf,0.0,
+FPR-1209,2026-11-15 14:43:46 -0600,,,,,,,,,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1208,2026-11-15 10:48:59 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1207,2026-11-14 21:14:50 -0600,paid,partial,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1207,2026-11-14 21:14:50 -0600,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1206,2026-11-14 20:02:58 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1205,2026-11-14 19:48:23 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1204,2026-11-14 16:25:26 -0600,paid,partial,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1204,2026-11-14 16:25:26 -0600,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1203,2026-11-14 08:50:10 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1202,2026-11-13 19:26:12 -0600,paid,fulfilled,,0.0,65.0,9.19,0.0,74.19,1,Secondary Crest Adidas Quarter Zip - Heather Gray - XL,65.0,6674916_13372
+FPR-1201,2026-11-13 15:06:02 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1200,2026-11-13 14:49:16 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1199,2026-11-13 12:57:02 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1198,2026-11-13 11:14:19 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1197,2026-11-13 00:20:30 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1196,2026-11-12 21:50:04 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1195,2026-11-12 21:18:19 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1194,2026-11-12 20:50:13 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1193,2026-11-12 20:14:32 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1192,2026-11-12 17:51:35 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1191,2026-11-12 17:25:54 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1190,2026-11-12 16:13:12 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1189,2026-11-12 15:25:45 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1188,2026-11-12 14:37:50 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1187,2026-11-12 13:57:10 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1186,2026-11-12 13:49:47 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1185,2026-11-12 13:29:25 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1184,2026-11-12 13:03:54 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1183,2026-11-12 12:53:24 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1182,2026-11-12 12:23:24 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1181,2026-11-12 12:13:34 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1180,2026-11-12 12:06:56 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1179,2026-11-12 11:46:20 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1178,2026-11-12 11:33:57 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1177,2026-11-12 11:16:05 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1176,2026-11-12 10:40:39 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1175,2026-11-12 10:30:55 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1174,2026-11-12 10:20:52 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1173,2026-11-12 10:14:47 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1172,2026-11-12 10:08:53 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1171,2026-11-12 09:57:53 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1170,2026-11-12 09:50:15 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1169,2026-11-12 09:46:48 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1168,2026-11-12 09:44:20 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1167,2026-11-12 09:41:26 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1166,2026-11-12 09:40:40 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1165,2026-11-12 09:38:53 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1164,2026-11-12 09:32:38 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1163,2026-11-12 09:31:50 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1162,2026-11-12 09:31:36 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1161,2026-11-12 09:31:25 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1160,2026-11-12 09:31:19 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1159,2026-11-12 09:29:00 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1158,2026-11-12 09:28:21 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1157,2026-11-12 09:26:20 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1156,2026-11-12 09:25:33 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1155,2026-11-12 09:25:32 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1154,2026-11-12 09:24:43 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1153,2026-11-12 09:24:04 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1152,2026-11-12 09:23:27 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1151,2026-11-12 09:22:05 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1150,2026-11-09 21:37:41 -0600,paid,partial,,0.0,25.0,6.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1150,2026-11-09 21:37:41 -0600,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1149,2026-11-09 15:09:49 -0600,paid,fulfilled,,0.0,25.5,5.35,0.0,30.85,1,Primary Crest Long Sleeve T-Shirt - Heather Forest - L,30.0,4002645_16153
+FPR-1148,2026-11-09 11:56:38 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1147,2026-11-08 23:33:04 -0600,paid,fulfilled,,0.0,25.0,5.35,0.0,30.35,1,Primary Crest T-Shirt - Oatmeal Triblend - M,25.0,9066343_6823
+FPR-1146,2026-11-08 10:09:52 -0600,paid,fulfilled,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1146,2026-11-08 10:09:52 -0600,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1145,2026-11-08 10:04:44 -0600,paid,fulfilled,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1145,2026-11-08 10:04:44 -0600,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1144,2026-11-08 10:01:38 -0600,paid,fulfilled,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1144,2026-11-08 10:01:38 -0600,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1143,2026-11-08 07:26:52 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1142,2026-11-07 21:31:08 -0600,paid,fulfilled,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1142,2026-11-07 21:31:08 -0600,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1141,2026-11-07 11:58:12 -0600,paid,fulfilled,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1141,2026-11-07 11:58:12 -0600,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1140,2026-11-07 11:37:58 -0600,paid,fulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1139,2026-11-07 11:29:15 -0600,paid,fulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1138,2026-11-07 11:20:33 -0600,paid,fulfilled,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1138,2026-11-07 11:20:33 -0600,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1137,2026-11-07 10:51:45 -0600,paid,fulfilled,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1137,2026-11-07 10:51:45 -0600,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1136,2026-11-07 10:03:59 -0600,paid,fulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1135,2026-11-07 09:23:45 -0600,paid,fulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1134,2026-11-07 08:15:30 -0600,paid,unfulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1133,2026-11-06 20:21:41 -0600,paid,unfulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1132,2026-11-06 18:48:22 -0600,paid,fulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1131,2026-11-06 16:10:24 -0600,paid,fulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1130,2026-11-06 15:57:19 -0600,paid,fulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1129,2026-11-06 15:25:06 -0600,paid,fulfilled,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1129,2026-11-06 15:25:06 -0600,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1128,2026-11-06 15:02:17 -0600,paid,fulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1127,2026-11-06 15:02:06 -0600,paid,fulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1126,2026-11-06 14:13:05 -0600,paid,fulfilled,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1126,2026-11-06 14:13:05 -0600,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1125,2026-11-05 15:47:25 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1124,2026-11-05 13:59:08 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1123,2026-11-05 13:28:33 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1122,2026-11-05 09:30:53 -0600,paid,fulfilled,,0.0,105.0,13.69,0.0,118.69,1,Secondary Crest Waffle Beanie - Birch,25.0,9651267_16174
+FPR-1122,2026-11-05 09:30:53 -0600,,,,,,,,,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - L,40.0,8978766_21934
+FPR-1122,2026-11-05 09:30:53 -0600,,,,,,,,,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - M,40.0,8978766_21933
+FPR-1121,2026-11-04 08:04:56 -0600,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1120,2026-11-02 22:49:10 -0600,paid,fulfilled,,0.0,60.0,13.88,0.0,73.88,1,Secondary Crest Dad Hat - Forest Green,25.0,8784527_8745
+FPR-1120,2026-11-02 22:49:10 -0600,,,,,,,,,1,Secondary Crest Hoodie - Forest - XL,35.0,7178280_34410
+FPR-1119,2026-10-31 17:08:18 -0500,paid,fulfilled,,0.0,40.0,9.28,0.0,49.28,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - M,40.0,8978766_21933
+FPR-1118,2026-10-31 11:38:00 -0500,paid,fulfilled,,0.0,25.0,5.09,0.0,30.09,1,Secondary Crest Snapback Hat - Forest Green,25.0,9210311_4809
+FPR-1117,2026-10-30 08:05:18 -0500,paid,fulfilled,,0.0,25.0,6.0,0.0,31.0,1,2026 Founding Member Scarf,0.0,
+FPR-1117,2026-10-30 08:05:18 -0500,,,,,,,,,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1116,2026-10-30 05:44:38 -0500,paid,fulfilled,,0.0,75.0,11.09,0.0,86.09,1,2026 Founding Member Scarf,0.0,
+FPR-1116,2026-10-30 05:44:38 -0500,,,,,,,,,1,Secondary Crest Dad Hat - Forest Green,25.0,8784527_8745
+FPR-1116,2026-10-30 05:44:38 -0500,,,,,,,,,2,Roots of the Club Membership,25.0,ROOTS26
+FPR-1115,2026-10-27 22:27:56 -0500,paid,fulfilled,,0.0,30.0,5.35,0.0,35.35,1,Primary Crest Long Sleeve T-Shirt - Heather Forest - L,30.0,4002645_16153
+FPR-1114,2026-10-26 14:07:31 -0500,paid,unfulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1113,2026-10-25 17:10:15 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1112,2026-10-25 17:08:46 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1111,2026-10-25 12:45:31 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1110,2026-10-24 23:44:20 -0500,paid,fulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1109,2026-10-24 22:32:20 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1108,2026-10-24 21:06:48 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1107,2026-10-24 21:04:33 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1106,2026-10-24 20:36:54 -0500,paid,fulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1105,2026-10-24 20:30:25 -0500,paid,fulfilled,,0.0,50.0,13.56,0.0,63.56,1,Secondary Crest Snapback Hat - Forest Green,25.0,9210311_4809
+FPR-1105,2026-10-24 20:30:25 -0500,,,,,,,,,1,Junior Ranger Toddler Hoodie - Heather Gray - 4T,25.0,4515255_23909
+FPR-1104,2026-10-24 19:52:43 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1103,2026-10-24 17:27:04 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1102,2026-10-24 15:10:08 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1101,2026-10-24 14:36:03 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1100,2026-10-24 14:13:10 -0500,paid,fulfilled,,0.0,121.5,29.96,0.0,151.46,1,Secondary Crest Snapback Hat - Forest Green,25.0,9210311_4809
+FPR-1100,2026-10-24 14:13:10 -0500,,,,,,,,,2,Secondary Crest Athletic Shorts (Long) - Forest Green - XL,35.0,3036556_9815
+FPR-1100,2026-10-24 14:13:10 -0500,,,,,,,,,1,Primary Crest Coffee Mug - White and Green - 15 oz,15.0,7045414_17360
+FPR-1100,2026-10-24 14:13:10 -0500,,,,,,,,,1,Primary Crest Shaker Pint Glass,25.0,4309759_16359
+FPR-1099,2026-10-24 14:08:33 -0500,paid,fulfilled,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1099,2026-10-24 14:08:33 -0500,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1098,2026-10-24 14:06:46 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1097,2026-10-24 14:02:50 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1096,2026-10-24 13:08:49 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1095,2026-10-24 12:18:24 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1094,2026-10-24 12:13:25 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1093,2026-10-23 11:12:59 -0500,paid,unfulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1092,2026-10-22 16:40:46 -0500,paid,unfulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1091,2026-10-22 00:37:44 -0500,paid,fulfilled,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1091,2026-10-22 00:37:44 -0500,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1090,2026-10-21 22:20:15 -0500,paid,fulfilled,,0.0,40.0,9.19,0.0,49.19,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - XL,40.0,8978766_21935
+FPR-1089,2026-10-20 23:27:09 -0500,paid,fulfilled,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1089,2026-10-20 23:27:09 -0500,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1088,2026-10-20 19:15:06 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1087,2026-10-20 15:44:53 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1086,2026-10-20 14:54:56 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1085,2026-10-20 11:22:51 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1084,2026-10-20 07:47:59 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1083,2026-10-20 07:46:42 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1082,2026-10-20 07:35:36 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1081,2026-10-20 07:25:50 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1080,2026-10-20 07:15:21 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1079,2026-10-20 00:57:15 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1078,2026-10-20 00:20:10 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1077,2026-10-19 23:21:41 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1076,2026-10-19 23:02:08 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1075,2026-10-19 22:26:05 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1074,2026-10-19 22:22:39 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1073,2026-10-19 22:09:36 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1072,2026-10-19 22:06:28 -0500,paid,fulfilled,,0.0,0.0,0.0,0.0,0.0,1,Roots of the Club Membership Migration,0.0,
+FPR-1071,2026-10-19 21:27:19 -0500,paid,partial,,0.0,65.0,18.04,2.38,85.42,1,Secondary Crest and Wordmark Short Sleeve T-shirt - Forest Green - L,25.0,6446954_6523
+FPR-1071,2026-10-19 21:27:19 -0500,,,,,,,,,1,Primary Crest Coffee Mug - White and Green - 11 oz,15.0,7045414_17359
+FPR-1071,2026-10-19 21:27:19 -0500,,,,,,,,,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1071,2026-10-19 21:27:19 -0500,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1070,2026-10-18 19:48:27 -0500,paid,unfulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1069,2026-10-18 11:57:37 -0500,paid,unfulfilled,,0.0,25.0,0.0,0.0,25.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1068,2026-10-15 21:13:36 -0500,paid,fulfilled,,0.0,35.0,9.19,0.0,44.19,1,Secondary Crest Hoodie - Forest - 2XL,35.0,7178280_34411
+FPR-1067,2026-10-15 21:01:17 -0500,paid,fulfilled,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1067,2026-10-15 21:01:17 -0500,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1066,2026-10-15 10:00:46 -0500,paid,fulfilled,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1066,2026-10-15 10:00:46 -0500,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1065,2026-10-14 15:06:10 -0500,paid,fulfilled,,0.0,25.0,6.0,0.0,31.0,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1065,2026-10-14 15:06:10 -0500,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1064,2026-10-13 20:54:03 -0500,paid,fulfilled,,0.0,30.0,10.69,0.0,40.69,1,"Secondary Crest - 4"" Magnet",5.0,1393867_16367
+FPR-1064,2026-10-13 20:54:03 -0500,,,,,,,,,1,Roots of the Club Membership,25.0,ROOTS26
+FPR-1064,2026-10-13 20:54:03 -0500,,,,,,,,,1,2026 Founding Member Scarf,0.0,
+FPR-1063,2026-10-11 21:49:26 -0500,paid,fulfilled,,0.0,40.0,6.0,0.0,46.0,1,Secondary Crest Classic Rope Cap (Printed) - Kelly Green,25.0,6930661_46026
+FPR-1063,2026-10-11 21:49:26 -0500,,,,,,,,,1,Primary Crest Coffee Mug - White and Green - 11 oz,15.0,7045414_17359
+FPR-1062,2026-10-11 14:55:22 -0500,paid,fulfilled,,0.0,70.0,6.0,0.0,76.0,1,Primary Crest Long Sleeve T-Shirt - White - M,30.0,8921790_10143
+FPR-1062,2026-10-11 14:55:22 -0500,,,,,,,,,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - M,40.0,8978766_21933
+FPR-1061,2026-10-10 12:08:39 -0500,paid,fulfilled,,0.0,5.0,4.69,0.0,9.69,1,"Secondary Crest - 4"" Magnet",5.0,1393867_16367
+FPR-1060,2026-10-09 22:55:14 -0500,paid,fulfilled,,0.0,25.0,4.95,0.0,29.95,1,Sunrise Crest T-Shirt - Oatmeal Triblend - XL,25.0,9743385_6825
+FPR-1059,2026-10-06 22:09:16 -0500,paid,fulfilled,,0.0,40.0,8.0,0.0,48.0,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - XL,40.0,8978766_21935
+FPR-1058,2026-10-06 08:06:54 -0500,paid,fulfilled,,0.0,65.0,8.0,0.0,73.0,1,Sunrise Crest T-Shirt - Dark Gray Heather - M,25.0,2330752_8461
+FPR-1058,2026-10-06 08:06:54 -0500,,,,,,,,,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - M,40.0,8978766_21933
+FPR-1057,2026-09-28 15:23:25 -0500,paid,fulfilled,,0.0,25.0,4.95,1.99,31.94,1,Secondary Crest and Wordmark Short Sleeve T-shirt - Forest Green - L,25.0,6446954_6523
+FPR-1056,2026-09-26 09:47:37 -0500,paid,fulfilled,,0.0,25.0,4.95,1.99,31.94,1,Secondary Crest and Wordmark Short Sleeve T-shirt - Forest Green - L,25.0,6446954_6523
+FPR-1055,2026-09-20 13:53:39 -0500,paid,fulfilled,,0.0,27.0,0.0,0.0,27.0,1,Forest Park Rangers FC '47 Brand Clean-up Hat,25.0,
+FPR-1055,2026-09-20 13:53:39 -0500,,,,,,,,,1,Sunrise Crest Sticker,2.0,
+FPR-1054,2026-09-19 19:25:06 -0500,paid,fulfilled,,0.0,40.0,8.0,0.0,48.0,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - M,40.0,8978766_21933
+FPR-1053,2026-09-18 22:32:39 -0500,paid,fulfilled,,0.0,65.0,8.0,0.0,73.0,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - 2XL,40.0,8978766_21936
+FPR-1053,2026-09-18 22:32:39 -0500,,,,,,,,,1,Secondary Crest Dad Hat - Forest Green,25.0,8784527_8745
+FPR-1052,2026-09-11 21:39:01 -0500,paid,fulfilled,,0.0,25.0,4.95,0.0,29.95,1,Crest and Wordmark T-Shirt - Heather Prism Mint - L,25.0,8013941_9383
+FPR-1051,2026-09-09 12:16:52 -0500,paid,fulfilled,,0.0,55.0,8.0,0.0,63.0,1,Secondary Crest Hoodie - Forest - L,35.0,7178280_34409
+FPR-1051,2026-09-09 12:16:52 -0500,,,,,,,,,1,Primary Crest Youth T-Shirt - Kelly Green - M,20.0,4970948_10629
+FPR-1050,2026-09-07 18:05:23 -0500,paid,fulfilled,,0.0,25.0,4.69,0.0,29.69,1,Secondary Crest Classic Rope Cap (Printed) - Kelly Green,25.0,6930661_46026
+FPR-1049,2026-09-07 09:03:39 -0500,paid,fulfilled,,0.0,105.0,8.0,0.0,113.0,1,Sunrise Crest Hoodie - Oatmeal Heather - 2XL,35.0,3052391_24979
+FPR-1049,2026-09-07 09:03:39 -0500,,,,,,,,,1,Primary Crest Zip Hoodie - Dark Heather - 2XL,35.0,3252339_17351
+FPR-1049,2026-09-07 09:03:39 -0500,,,,,,,,,1,Secondary Crest Athletic Shorts (Long) - Forest Green - XL,35.0,3036556_9815
+FPR-1048,2026-09-07 09:00:55 -0500,paid,fulfilled,,0.0,35.0,8.0,0.0,43.0,2,"Secondary Crest - 4"" Magnet",5.0,1393867_16367
+FPR-1048,2026-09-07 09:00:55 -0500,,,,,,,,,1,Seconday Crest Organic Dad Hat - Oyster,25.0,7627994_12692
+FPR-1047,2026-08-28 15:07:53 -0500,paid,fulfilled,,0.0,50.0,7.15,0.0,57.15,1,Sunrise Crest T-Shirt - Oatmeal Triblend - XL,25.0,9743385_6825
+FPR-1047,2026-08-28 15:07:53 -0500,,,,,,,,,1,Secondary Crest and Wordmark Short Sleeve T-shirt - Forest Green - XL,25.0,6446954_6524
+FPR-1046,2026-08-27 08:59:59 -0500,paid,fulfilled,,0.0,40.0,8.79,0.0,48.79,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - L,40.0,8978766_21934
+FPR-1045,2026-08-10 22:05:20 -0500,paid,fulfilled,,0.0,25.0,4.75,0.0,29.75,1,Sunrise Crest T-Shirt - Oatmeal Triblend - 2XL,25.0,9743385_6826
+FPR-1044,2026-08-01 14:39:57 -0500,paid,fulfilled,,0.0,65.0,8.0,0.0,73.0,1,Primary Crest Shaker Pint Glass,25.0,4309759_16359
+FPR-1044,2026-08-01 14:39:57 -0500,,,,,,,,,1,Secondary Crest Classic Rope Cap (Printed) - Kelly Green,25.0,6930661_46026
+FPR-1044,2026-08-01 14:39:57 -0500,,,,,,,,,1,Primary Crest Coffee Mug - White and Green - 15 oz,15.0,7045414_17360
+FPR-1043,2026-07-18 22:21:10 -0500,paid,fulfilled,,0.0,135.0,8.0,0.0,143.0,1,Primary Crest Coffee Mug - White and Green - 15 oz,15.0,7045414_17360
+FPR-1043,2026-07-18 22:21:10 -0500,,,,,,,,,1,Secondary Crest Adidas Quarter Zip - White - L,65.0,1842949_13357
+FPR-1043,2026-07-18 22:21:10 -0500,,,,,,,,,1,"Secondary Crest - 4"" Magnet",5.0,1393867_16367
+FPR-1043,2026-07-18 22:21:10 -0500,,,,,,,,,1,Primary Crest Women's Racerback Tank - Heather White - XL,25.0,9199828_6625
+FPR-1043,2026-07-18 22:21:10 -0500,,,,,,,,,1,Crest and Wordmark T-Shirt - Heather Prism Mint - L,25.0,8013941_9383
+FPR-1042,2026-07-18 00:25:54 -0500,paid,fulfilled,,0.0,40.0,8.0,0.0,48.0,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - L,40.0,8978766_21934
+FPR-1041,2026-07-17 10:18:06 -0500,paid,fulfilled,,0.0,40.0,8.0,0.0,48.0,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - XL,40.0,8978766_21935
+FPR-1040,2026-07-17 06:30:21 -0500,paid,fulfilled,,0.0,40.0,6.75,0.0,46.75,1,Sunrise Crest T-Shirt - Dark Gray Heather - XL,25.0,2330752_8463
+FPR-1040,2026-07-17 06:30:21 -0500,,,,,,,,,1,Junior Ranger Baby Onesie - Heather Gray - 12M,15.0,6824334_8182
+FPR-1039,2026-07-14 21:42:48 -0500,paid,fulfilled,,0.0,75.0,8.0,0.0,83.0,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - L,40.0,8978766_21934
+FPR-1039,2026-07-14 21:42:48 -0500,,,,,,,,,1,Secondary Crest Hoodie - Forest - L,35.0,7178280_34409
+FPR-1038,2026-06-29 17:32:35 -0500,paid,fulfilled,,0.0,85.0,15.0,0.0,100.0,1,Sunrise Crest Hoodie - Oatmeal Heather - M,35.0,3052391_24976
+FPR-1038,2026-06-29 17:32:35 -0500,,,,,,,,,1,Primary Crest T-Shirt - Heather Kelly - L,25.0,4106922_18645
+FPR-1038,2026-06-29 17:32:35 -0500,,,,,,,,,1,Secondary Crest Classic Rope Cap (Printed) - Kelly Green,25.0,6930661_46026
+FPR-1037,2026-06-24 19:50:12 -0500,paid,fulfilled,,0.0,210.0,8.0,1.99,219.99,1,Primary Crest Long Sleeve T-Shirt - Heather Forest - 2XL,30.0,4002645_16155
+FPR-1037,2026-06-24 19:50:12 -0500,,,,,,,,,1,Crest and Wordmark Youth T-Shirt - Forest - M,20.0,1841201_17601
+FPR-1037,2026-06-24 19:50:12 -0500,,,,,,,,,1,Sunrise Crest T-Shirt - Dark Gray Heather - 3XL,25.0,2330752_8465
+FPR-1037,2026-06-24 19:50:12 -0500,,,,,,,,,1,Sunrise Crest Hoodie - Oatmeal Heather - 3XL,35.0,3052391_24980
+FPR-1037,2026-06-24 19:50:12 -0500,,,,,,,,,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - 3XL,40.0,8978766_21937
+FPR-1037,2026-06-24 19:50:12 -0500,,,,,,,,,1,Secondary Crest and Wordmark Short Sleeve T-shirt - Forest Green - 3XL,25.0,6446954_6526
+FPR-1037,2026-06-24 19:50:12 -0500,,,,,,,,,1,Primary Crest Zip Hoodie - Dark Heather - 3XL,35.0,3252339_17352
+FPR-1036,2026-06-23 16:14:43 -0500,paid,fulfilled,,0.0,25.0,4.75,0.0,29.75,1,Sunrise Crest T-Shirt - Oatmeal Triblend - L,25.0,9743385_6824
+FPR-1035,2026-06-22 07:31:12 -0500,paid,fulfilled,,0.0,25.0,4.49,0.0,29.49,1,Secondary Crest Dad Hat - Forest Green,25.0,8784527_8745
+FPR-1034,2026-06-17 12:31:09 -0500,paid,fulfilled,,0.0,215.0,8.0,0.0,223.0,1,Sunrise Crest T-Shirt - Oatmeal Triblend - 2XL,25.0,9743385_6826
+FPR-1034,2026-06-17 12:31:09 -0500,,,,,,,,,1,Secondary Crest Adidas Quarter Zip - White - L,65.0,1842949_13357
+FPR-1034,2026-06-17 12:31:09 -0500,,,,,,,,,1,Secondary Crest Adidas Quarter Zip - Heather Gray - L,65.0,6674916_13371
+FPR-1034,2026-06-17 12:31:09 -0500,,,,,,,,,1,Secondary Crest Hoodie - Forest - M,35.0,7178280_34408
+FPR-1034,2026-06-17 12:31:09 -0500,,,,,,,,,1,Secondary Crest Organic Bucket Hat - Stone,25.0,6462858_13823
+FPR-1033,2026-06-14 20:44:45 -0500,paid,fulfilled,,0.0,50.0,8.0,0.0,58.0,1,Secondary Crest and Wordmark Short Sleeve T-shirt - Forest Green - XL,25.0,6446954_6524
+FPR-1033,2026-06-14 20:44:45 -0500,,,,,,,,,1,Sunrise Crest T-Shirt - Oatmeal Triblend - XL,25.0,9743385_6825
+FPR-1032,2026-06-14 14:45:13 -0500,paid,fulfilled,,0.0,150.0,8.0,0.0,158.0,1,Secondary Crest Columbia Booney Hat - Khaki,35.0,4896116_19655
+FPR-1032,2026-06-14 14:45:13 -0500,,,,,,,,,1,Primary Crest CamelBak Water Bottle - Clear,30.0,8614120_22017
+FPR-1032,2026-06-14 14:45:13 -0500,,,,,,,,,1,Secondary Crest Athletic Shorts (Long) - Forest Green - 2XL,35.0,3036556_9816
+FPR-1032,2026-06-14 14:45:13 -0500,,,,,,,,,1,Sunrise Crest T-Shirt - Dark Gray Heather - XL,25.0,2330752_8463
+FPR-1032,2026-06-14 14:45:13 -0500,,,,,,,,,1,Sunrise Crest T-Shirt - Oatmeal Triblend - XL,25.0,9743385_6825
+FPR-1031,2026-06-13 14:53:31 -0500,paid,fulfilled,,0.0,160.0,8.0,0.0,168.0,1,Sunrise Crest Youth T-Shirt - Heather Dust - S,20.0,9421069_17604
+FPR-1031,2026-06-13 14:53:31 -0500,,,,,,,,,1,Primary Crest Youth T-Shirt - Heather Dust - M,20.0,6420042_17605
+FPR-1031,2026-06-13 14:53:31 -0500,,,,,,,,,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - S,40.0,8978766_21932
+FPR-1031,2026-06-13 14:53:31 -0500,,,,,,,,,1,Primary Crest T-Shirt - Gray Triblend - M,25.0,3271142_6538
+FPR-1031,2026-06-13 14:53:31 -0500,,,,,,,,,1,Sunrise Crest T-Shirt - Oatmeal Triblend - M,25.0,9743385_6823
+FPR-1031,2026-06-13 14:53:31 -0500,,,,,,,,,1,Primary Crest Long Sleeve T-Shirt - White - M,30.0,8921790_10143
+FPR-1030,2026-06-10 13:25:23 -0500,paid,fulfilled,,0.0,105.0,8.0,0.0,113.0,1,"Secondary Crest - 4"" Magnet",5.0,1393867_16367
+FPR-1030,2026-06-10 13:25:23 -0500,,,,,,,,,1,Secondary Crest Organic Bucket Hat - Stone,25.0,6462858_13823
+FPR-1030,2026-06-10 13:25:23 -0500,,,,,,,,,1,Sunrise Crest T-Shirt - Oatmeal Triblend - XL,25.0,9743385_6825
+FPR-1030,2026-06-10 13:25:23 -0500,,,,,,,,,1,Seconday Crest Organic Dad Hat - Oyster,25.0,7627994_12692
+FPR-1030,2026-06-10 13:25:23 -0500,,,,,,,,,1,Sunrise Crest T-Shirt - Oatmeal Triblend - S,25.0,9743385_6822
+FPR-1029,2026-06-09 09:52:20 -0500,paid,fulfilled,,0.0,25.0,4.75,0.0,29.75,1,Primary Crest T-Shirt - Gray Triblend - XL,25.0,3271142_6540
+FPR-1028,2026-06-07 00:14:20 -0500,paid,fulfilled,,0.0,105.0,8.0,0.0,113.0,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - 2XL,40.0,8978766_21936
+FPR-1028,2026-06-07 00:14:20 -0500,,,,,,,,,1,Secondary Crest Adidas Quarter Zip - White - 2XL,65.0,1842949_13359
+FPR-1027,2026-06-06 21:10:31 -0500,paid,fulfilled,,0.0,55.0,8.0,0.0,63.0,1,Sunrise Crest Hoodie - Oatmeal Heather - S,35.0,3052391_24975
+FPR-1027,2026-06-06 21:10:31 -0500,,,,,,,,,1,Crest and Wordmark Drawstring Bag - Spring Green,20.0,1255900_8894
+FPR-1026,2026-06-05 21:59:28 -0500,paid,fulfilled,,0.0,20.0,4.49,0.0,24.49,1,Sunrise Crest Youth T-Shirt - Heather Dust - S,20.0,9421069_17604
+FPR-1025,2026-06-05 14:52:46 -0500,paid,fulfilled,,0.0,60.0,8.0,0.0,68.0,1,Sunrise Crest T-Shirt - Oatmeal Triblend - L,25.0,9743385_6824
+FPR-1025,2026-06-05 14:52:46 -0500,,,,,,,,,1,Junior Rangers Toddler T-Shirt - Heather Gray - 4,15.0,1833119_12616
+FPR-1025,2026-06-05 14:52:46 -0500,,,,,,,,,1,Sunrise Crest Youth T-Shirt - Heather Dust - S,20.0,9421069_17604
+FPR-1024,2026-06-05 08:16:04 -0500,paid,fulfilled,,0.0,110.0,8.0,0.0,118.0,1,Crest and Wordmark T-Shirt - Heather Prism Mint - 2XL,25.0,8013941_9385
+FPR-1024,2026-06-05 08:16:04 -0500,,,,,,,,,1,Secondary Crest Athletic Shorts (Long) - Forest Green - 3XL,35.0,3036556_9817
+FPR-1024,2026-06-05 08:16:04 -0500,,,,,,,,,1,Sunrise Crest T-Shirt - Dark Gray Heather - 3XL,25.0,2330752_8465
+FPR-1024,2026-06-05 08:16:04 -0500,,,,,,,,,1,Secondary Crest Snapback Hat - Forest Green,25.0,9210311_4809
+FPR-1023,2026-06-02 17:30:47 -0500,paid,fulfilled,,0.0,100.0,8.0,0.0,108.0,1,Primary Crest Coffee Mug - White and Green - 15 oz,15.0,7045414_17360
+FPR-1023,2026-06-02 17:30:47 -0500,,,,,,,,,1,Primary Crest Shaker Pint Glass,25.0,4309759_16359
+FPR-1023,2026-06-02 17:30:47 -0500,,,,,,,,,1,Secondary Crest Athletic Shorts (Long) - Forest Green - XL,35.0,3036556_9815
+FPR-1023,2026-06-02 17:30:47 -0500,,,,,,,,,1,Primary Crest T-Shirt - White - XL,25.0,2485119_4014
+FPR-1022,2026-06-02 06:48:05 -0500,paid,fulfilled,,0.0,60.0,8.0,0.0,68.0,1,Secondary Crest and Wordmark Short Sleeve T-shirt - Forest Green - M,25.0,6446954_6522
+FPR-1022,2026-06-02 06:48:05 -0500,,,,,,,,,1,Sunrise Crest Hoodie - Oatmeal Heather - L,35.0,3052391_24977
+FPR-1021,2026-06-01 15:00:33 -0500,paid,fulfilled,,0.0,25.0,4.75,1.99,31.74,1,Sunrise Crest T-Shirt - Dark Gray Heather - L,25.0,2330752_8462
+FPR-1020,2026-05-31 19:46:47 -0500,paid,fulfilled,,0.0,25.0,4.49,0.0,29.49,1,Secondary Crest Dad Hat - Forest Green,25.0,8784527_8745
+FPR-1019,2026-05-30 23:51:29 -0500,paid,fulfilled,,0.0,60.0,8.0,0.0,68.0,1,Crest and Wordmark T-Shirt - Heather Prism Mint - M,25.0,8013941_9382
+FPR-1019,2026-05-30 23:51:29 -0500,,,,,,,,,1,Sunrise Crest Hoodie - Oatmeal Heather - M,35.0,3052391_24976
+FPR-1018,2026-05-30 10:09:01 -0500,paid,fulfilled,,0.0,20.0,4.49,0.0,24.49,1,Crest and Wordmark Youth T-Shirt - Forest - S,20.0,1841201_17600
+FPR-1017,2026-05-29 21:34:52 -0500,paid,fulfilled,,0.0,100.0,8.0,0.0,108.0,1,Primary Crest CamelBak Water Bottle - Forest Green,30.0,8707168_22019
+FPR-1017,2026-05-29 21:34:52 -0500,,,,,,,,,1,Secondary Crest Athletic Shorts (Short) - Forest Green - L,35.0,9240257_9807
+FPR-1017,2026-05-29 21:34:52 -0500,,,,,,,,,1,Secondary Crest Columbia Booney Hat - Khaki,35.0,4896116_19655
+FPR-1016,2026-05-29 11:56:40 -0500,paid,fulfilled,,0.0,25.0,4.49,0.0,29.49,1,Secondary Crest Classic Rope Cap (Printed) - Kelly Green,25.0,6930661_46026
+FPR-1015,2026-05-28 19:51:02 -0500,paid,fulfilled,,0.0,50.0,8.0,0.0,58.0,1,Sunrise Crest T-Shirt - Oatmeal Triblend - M,25.0,9743385_6823
+FPR-1015,2026-05-28 19:51:02 -0500,,,,,,,,,1,Sunrise Crest Organic Dad Hat - Oyster,25.0,2819025_12692
+FPR-1014,2026-05-28 18:12:04 -0500,paid,fulfilled,,0.0,25.0,8.0,0.0,33.0,1,Primary Crest Shaker Pint Glass,25.0,4309759_16359
+FPR-1013,2026-05-28 17:35:36 -0500,paid,fulfilled,,0.0,140.0,8.0,0.0,148.0,1,Secondary Crest Athletic Shorts (Short) - Forest Green - M,35.0,9240257_9806
+FPR-1013,2026-05-28 17:35:36 -0500,,,,,,,,,1,Secondary Crest Dad Hat - Forest Green,25.0,8784527_8745
+FPR-1013,2026-05-28 17:35:36 -0500,,,,,,,,,1,Primary Crest Toddler Hoodie - Kelly Green - 4T,25.0,6033206_23937
+FPR-1013,2026-05-28 17:35:36 -0500,,,,,,,,,1,Junior Ranger Baby Onesie - Heather Gray - 12M,15.0,6824334_8182
+FPR-1013,2026-05-28 17:35:36 -0500,,,,,,,,,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - L,40.0,8978766_21934
+FPR-1012,2026-05-28 16:43:07 -0500,paid,fulfilled,,0.0,30.0,8.0,1.99,39.99,1,Secondary Crest and Wordmark Short Sleeve T-shirt - Forest Green - XS,25.0,6446954_6520
+FPR-1012,2026-05-28 16:43:07 -0500,,,,,,,,,1,"Secondary Crest - 4"" Magnet",5.0,1393867_16367
+FPR-1011,2026-05-28 15:48:08 -0500,paid,fulfilled,,0.0,40.0,8.0,0.0,48.0,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - XL,40.0,8978766_21935
+FPR-1010,2026-05-28 15:37:06 -0500,paid,fulfilled,,0.0,60.0,8.0,0.0,68.0,1,"Secondary Crest - 4"" Magnet",5.0,1393867_16367
+FPR-1010,2026-05-28 15:37:06 -0500,,,,,,,,,1,Primary Crest Coffee Mug - White and Green - 11 oz,15.0,7045414_17359
+FPR-1010,2026-05-28 15:37:06 -0500,,,,,,,,,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - L,40.0,8978766_21934
+FPR-1009,2026-05-28 15:36:48 -0500,paid,fulfilled,,0.0,45.0,8.0,0.0,53.0,1,"Secondary Crest - 4"" Magnet",5.0,1393867_16367
+FPR-1009,2026-05-28 15:36:48 -0500,,,,,,,,,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - L,40.0,8978766_21934
+FPR-1008,2026-05-28 15:22:34 -0500,paid,fulfilled,,0.0,160.0,8.0,0.0,168.0,1,Sunrise Crest Cuffed Beanie - Spruce,25.0,2299683_8941
+FPR-1008,2026-05-28 15:22:34 -0500,,,,,,,,,1,Sunrise Crest Hoodie - Oatmeal Heather - 3XL,35.0,3052391_24980
+FPR-1008,2026-05-28 15:22:34 -0500,,,,,,,,,1,Primary Crest T-Shirt - Gray Triblend - 3XL,25.0,3271142_6542
+FPR-1008,2026-05-28 15:22:34 -0500,,,,,,,,,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - 3XL,40.0,8978766_21937
+FPR-1008,2026-05-28 15:22:34 -0500,,,,,,,,,1,Primary Crest Zip Hoodie - Dark Heather - 3XL,35.0,3252339_17352
+FPR-1007,2026-05-28 14:09:05 -0500,paid,fulfilled,,0.0,25.0,4.49,0.0,29.49,1,Secondary Crest Classic Rope Cap (Printed) - Kelly Green,25.0,6930661_46026
+FPR-1006,2026-05-28 13:13:34 -0500,paid,fulfilled,,0.0,270.0,8.0,3.98,281.98,1,Sunrise Crest T-Shirt - Oatmeal Triblend - XL,25.0,9743385_6825
+FPR-1006,2026-05-28 13:13:34 -0500,,,,,,,,,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - XL,40.0,8978766_21935
+FPR-1006,2026-05-28 13:13:34 -0500,,,,,,,,,1,Secondary Crest and Wordmark Short Sleeve T-shirt - Forest Green - 2XL,25.0,6446954_6525
+FPR-1006,2026-05-28 13:13:34 -0500,,,,,,,,,1,Secondary Crest and Wordmark Short Sleeve T-shirt - Forest Green - XL,25.0,6446954_6524
+FPR-1006,2026-05-28 13:13:34 -0500,,,,,,,,,1,Primary Crest T-Shirt - Gray Triblend - 2XL,25.0,3271142_6541
+FPR-1006,2026-05-28 13:13:34 -0500,,,,,,,,,1,Secondary Crest Columbia Booney Hat - Khaki,35.0,4896116_19655
+FPR-1006,2026-05-28 13:13:34 -0500,,,,,,,,,1,Secondary Crest Athletic Shorts (Long) - Forest Green - XL,35.0,3036556_9815
+FPR-1006,2026-05-28 13:13:34 -0500,,,,,,,,,1,Sunrise Crest T-Shirt - Oatmeal Triblend - 2XL,25.0,9743385_6826
+FPR-1006,2026-05-28 13:13:34 -0500,,,,,,,,,1,Sunrise Crest Hoodie - Oatmeal Heather - 2XL,35.0,3052391_24979
+FPR-1005,2026-05-28 11:02:25 -0500,paid,fulfilled,,0.0,65.0,8.0,0.0,73.0,1,Secondary Crest Adidas Quarter Zip - Heather Gray - L,65.0,6674916_13371
+#1004,2026-05-26 20:39:52 -0500,paid,fulfilled,,0.0,135.0,0.0,0.0,135.0,1,Embroidered Secondary Crest Windbreaker - Forest Green - L,40.0,1083724_16431
+#1004,2026-05-26 20:39:52 -0500,,,,,,,,,1,Crest and Wordmark T-Shirt - Heather Prism Mint - L,25.0,8013941_9383
+#1004,2026-05-26 20:39:52 -0500,,,,,,,,,1,Sunrise Crest Hoodie - Oatmeal Heather - XL,35.0,3052391_24978
+#1004,2026-05-26 20:39:52 -0500,,,,,,,,,1,Secondary Crest Athletic Shorts (Short) - Forest Green - M,35.0,9240257_9806
+#1003,2026-05-26 18:35:20 -0500,paid,fulfilled,,0.0,25.0,4.49,0.0,29.49,1,Sunrise Crest Organic Dad Hat - Oyster,25.0,2819025_12692
+#1002,2026-05-24 18:31:39 -0500,refunded,unfulfilled,2026-05-26 18:13:10 -0500,195.97,165.0,30.97,0.0,195.97,1,Sunrise Crest Hoodie - Oatmeal Heather - XL,35.0,3052391_24978
+#1002,2026-05-24 18:31:39 -0500,,,,,,,,,1,Secondary Crest Athletic Shorts (Short) - Forest Green - M,35.0,9240257_9806
+#1002,2026-05-24 18:31:39 -0500,,,,,,,,,1,Primary Crest Long Sleeve T-Shirt - Heather Forest - XL,30.0,4002645_16154
+#1002,2026-05-24 18:31:39 -0500,,,,,,,,,1,Crest and Wordmark T-Shirt - Heather Prism Mint - L,25.0,8013941_9383
+#1002,2026-05-24 18:31:39 -0500,,,,,,,,,1,Embroidered Secondary Crest Windbreaker - Forest Green - L,40.0,1083724_16431
+#1001,2026-05-24 17:12:46 -0500,refunded,unfulfilled,2026-05-26 18:13:09 -0500,235.71,205.0,30.71,0.0,235.71,1,Primary Crest T-Shirt - Gray Triblend - 3XL,25.0,3271142_6542
+#1001,2026-05-24 17:12:46 -0500,,,,,,,,,1,Stacked Type Crewneck Sweatshirt - Blue Spruce - 3XL,40.0,8978766_21937
+#1001,2026-05-24 17:12:46 -0500,,,,,,,,,1,Sunrise Crest Youth T-Shirt - Heather Dust - S,20.0,9421069_17604
+#1001,2026-05-24 17:12:46 -0500,,,,,,,,,1,Sunrise Crest Waffle Beanie - Birch,25.0,3982980_16174
+#1001,2026-05-24 17:12:46 -0500,,,,,,,,,1,Sunrise Crest Hoodie - Oatmeal Heather - 3XL,35.0,3052391_24980
+#1001,2026-05-24 17:12:46 -0500,,,,,,,,,1,Secondary Crest Cuffed Beanie - Spruce,25.0,9939755_8941
+#1001,2026-05-24 17:12:46 -0500,,,,,,,,,1,Primary Crest Zip Hoodie - Dark Heather - 3XL,35.0,3252339_17352

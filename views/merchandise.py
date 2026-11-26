@@ -19,7 +19,19 @@ from common import (
 
 BASE = Path(__file__).parent.parent
 DATA_PATH = BASE / "data" / "printful-orders.csv"
+SHOPIFY_PATH = BASE / "data" / "shopify-orers.csv"
 LOGO_PATH = BASE / "assets" / "logo.png"
+
+# Sizes are the trailing segment of the Shopify line-item name, e.g.
+# "Sunrise Crest Hoodie - Oatmeal Heather - 2XL". Longest alternatives first so
+# "2XL" is not matched as "XL".
+SIZE_PATTERN = (
+    r"^(.*?)\s*-\s*(5XL|4XL|3XL|2XL|XS|XL|S|M|L|18M|12M|24M|2T|3T|4T|5T|6|5|4|3|2|1)$"
+)
+
+# Logical run so the size chart reads like a size curve, not alphabetically.
+SIZE_ORDER = ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL",
+              "12M", "18M", "24M", "2T", "3T", "4T", "5T", "1", "2", "3", "4", "5", "6"]
 
 STATUS_COLORS = {
     "Fulfilled": REVENUE_COLOR,
@@ -52,6 +64,30 @@ def load_orders(path: str, mtime: float) -> pd.DataFrame:
     df["Canceled"] = df["Status"].str.lower().eq("canceled")
     df["State"] = df["State Code"].str.upper()
     return df.sort_values("Order Date").reset_index(drop=True)
+
+
+@st.cache_data(show_spinner=False)
+def load_shopify(path: str, mtime: float) -> pd.DataFrame:
+    """Shopify line items. Order-level fields only appear on each order's first row."""
+    df = pd.read_csv(path)
+    for col in ("Name", "Lineitem name", "Financial Status", "Fulfillment Status"):
+        df[col] = df[col].fillna("").astype(str).str.strip()
+
+    df["Item"] = df["Lineitem name"]
+    df["Qty"] = pd.to_numeric(df["Lineitem quantity"], errors="coerce").fillna(1).astype(int)
+    df["Price"] = pd.to_numeric(df["Lineitem price"], errors="coerce").fillna(0.0)
+    df["Revenue"] = df["Qty"] * df["Price"]
+    df["IsMembership"] = df["Item"].str.contains("Membership", case=False, na=False)
+
+    parts = df["Item"].str.extract(SIZE_PATTERN)
+    df["Product"] = parts[0].fillna(df["Item"]).str.strip()
+    df["Size"] = parts[1].fillna("")
+
+    df["Order Date"] = (
+        pd.to_datetime(df["Created at"], errors="coerce", utc=True)
+          .dt.tz_convert("America/Chicago").dt.tz_localize(None)
+    )
+    return df
 
 
 
@@ -231,6 +267,96 @@ with c2:
         f"{pct(by_state['size'].iloc[0], by_state['size'].sum())} in {by_state.index[0]}"
     )
 
+# ---------------------------- products & sizes ------------------------------ #
+sh = load_shopify(str(SHOPIFY_PATH), SHOPIFY_PATH.stat().st_mtime)
+merch = sh[~sh["IsMembership"]].copy()
+merch = merch[merch["Order Date"].notna()]
+if not include_canceled:
+    merch = merch[merch["Cancelled at"].isna()]
+merch = merch[(merch["Order Date"].dt.date >= date_range[0])
+              & (merch["Order Date"].dt.date <= date_range[1])]
+
+if not merch.empty:
+    st.write("")
+    st.markdown('<div class="section-title">Products &amp; sizes</div>', unsafe_allow_html=True)
+    st.markdown(
+        '<div class="section-sub">Merchandise line items from the Shopify export · '
+        "memberships excluded · cost of goods is not in either export, so profit is not shown"
+        "</div>",
+        unsafe_allow_html=True,
+    )
+
+    merch_units = int(merch["Qty"].sum())
+    merch_retail = float(merch["Revenue"].sum())
+    n_products = merch["Product"].nunique()
+    sized = merch[merch["Size"] != ""]
+    unsized_units = int(merch.loc[merch["Size"] == "", "Qty"].sum())
+
+    st.markdown(
+        f"""
+        <div class="cards">
+          <div class="card accent-merch">
+            <div class="label">Merch units</div>
+            <div class="value">{human(merch_units)}</div>
+            <div class="note">{human(int(merch["Size"].ne("").sum()))} sized lines</div>
+          </div>
+          <div class="card accent-revenue">
+            <div class="label">Merch retail value</div>
+            <div class="value">{money(merch_retail)}</div>
+            <div class="note">line price × quantity</div>
+          </div>
+          <div class="card accent-merch">
+            <div class="label">Products sold</div>
+            <div class="value">{n_products}</div>
+            <div class="note">{human(unsized_units)} units one-size</div>
+          </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.write("")
+    st.markdown('<div class="subhead">Units by size</div>', unsafe_allow_html=True)
+    size_counts = sized.groupby("Size")["Qty"].sum()
+    ordered = [s for s in SIZE_ORDER if s in size_counts.index]
+    ordered += [s for s in size_counts.index if s not in SIZE_ORDER]
+    size_counts = size_counts.reindex(ordered)
+
+    szfig = go.Figure(go.Bar(
+        x=size_counts.index, y=size_counts.values,
+        marker=dict(color=CONTROL_COLOR, line=dict(width=0)),
+        text=size_counts.values, textposition="outside", cliponaxis=False,
+        hovertemplate="%{x}: %{y} units<extra></extra>",
+    ))
+    szfig.update_yaxes(showgrid=True, gridcolor=GRID, showticklabels=False, ticks="",
+                       range=[0, size_counts.max() * 1.18])
+    szfig.update_xaxes(showgrid=False, ticks="", title=None)
+    szfig.update_layout(showlegend=False, bargap=0.3)
+    st.plotly_chart(chart_layout(szfig, height=280), width="stretch",
+                    config={"displayModeBar": False})
+
+    biggest = size_counts.idxmax()
+    st.caption(
+        f"{human(int(sized['Qty'].sum()))} sized units · "
+        f"{pct(size_counts.max(), sized['Qty'].sum())} in {biggest} · "
+        f"{human(unsized_units)} units are one-size items"
+    )
+
+    st.write("")
+    st.markdown('<div class="subhead">Top products</div>', unsafe_allow_html=True)
+    top = (merch.groupby("Product")
+               .agg(Units=("Qty", "sum"), Retail=("Revenue", "sum"))
+               .sort_values("Units", ascending=False)
+               .head(15)
+               .reset_index())
+    st.dataframe(
+        top,
+        hide_index=True,
+        width="stretch",
+        column_config={"Retail": st.column_config.NumberColumn(format="$%.2f")},
+    )
+    st.caption(f"Top {min(15, len(top))} of {n_products} products by units")
+
 # ------------------------------ recent orders ------------------------------ #
 st.write("")
 st.markdown('<div class="section-title">Recent orders</div>', unsafe_allow_html=True)
@@ -256,15 +382,25 @@ st.write("")
 with st.expander("About this data"):
     st.markdown(
         f"""
-Source: `data/printful-orders.csv` · {len(df_all):,} orders · {money(float(df_all["Amount"].sum()))} gross.
+Two sources, joined on order number (Shopify's `FPR-1234` matches Printful's `#FPR-1234`).
 
-- Printful order export, de-identified: recipient name and street address are removed;
-  city, state and postcode are retained. The dashboard never displays a buyer's identity.
-- Two stores appear in the export — Forest Park Rangers FC and Personal orders — and both
-  are included by default; use the sidebar to isolate either.
-- Canceled orders are excluded by default ({int(df_all["Canceled"].sum())} in the file) and
-  contribute $0.00 to gross sales.
-- Totals are the order totals from Printful; they are not net of Printful's fulfilment or
-  shipping costs, so this is revenue, not margin.
+**`data/printful-orders.csv`** — {len(df_all):,} orders · {money(float(df_all["Amount"].sum()))} gross.
+Fulfilment status, destination and order totals.
+
+**`data/shopify-orers.csv`** — {len(sh['Name'].dropna().unique()):,} orders.
+Line-item detail: products, sizes and line prices. The export is line-item level, so
+order-level fields appear only on each order's first row.
+
+- Both files are de-identified. The Shopify export arrived with the buyer's name, email,
+  street address, city, zip and phone in 14 columns; only order, status, totals and
+  line-item fields were kept. Nothing identifying is displayed or committed.
+- Memberships sold through Shopify (`Roots of the Club Membership`, `… Migration`) are
+  excluded from the products and sizes section — that section is merchandise only.
+- Canceled orders are excluded by default ({int(df_all["Canceled"].sum())} in the Printful
+  file, {int(sh["Cancelled at"].notna().sum())} Shopify line items).
+- **Cost of goods is not present in either export**, so COGS and profit are not shown.
+  Shopify can include a per-item cost column; adding it would enable a profit view.
+- Totals are revenue, not margin — they are not net of Printful's fulfilment or shipping
+  costs.
         """
     )

@@ -52,6 +52,9 @@ Printful order export, May–Nov 2026.
   states shipped to.
 - **Sales over time** — revenue per month, or cumulative.
 - **Order status** and **where orders ship** (top states, with order count and value).
+- **Products & sizes** — merch units, retail value and product count from the Shopify
+  export; a size curve (XS–3XL plus toddler sizes) for forecasting; and the top products
+  by units. Memberships sold through Shopify are excluded.
 - **Recent orders** — the 12 most recent, without buyer names or street addresses.
 
 Sidebar filters: date range, store (Forest Park Rangers FC / Personal orders), and whether
